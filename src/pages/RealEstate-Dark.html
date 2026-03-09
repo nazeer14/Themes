@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/realestate-dark.css">
+<link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
 
@@ -15,20 +16,7 @@
 <div class="cur" id="cur"></div>
 <div class="cur-ring" id="curRing"></div>
 
-
-<nav id="nav">
-  <a href="#" class="nav-logo">Vastu <span>Prestige</span></a>
-  <div class="nav-links">
-    <a href="#properties">Properties</a>
-    <a href="#cities">Cities</a>
-    <a href="#process">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="nav-cta">Enquire Now</a>
-  </div>
-  <div class="nav-burger" id="burger">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+<nav id="nav"></nav>
 
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
@@ -814,6 +802,13 @@ document.querySelectorAll('.f-group select').forEach(sel=>{
     this.classList.toggle('has-val', this.value !== '');
   });
 });
+
+fetch("../navbar.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("nav").innerHTML = data;
+});
+
 </script>
 </body>
 </html>
