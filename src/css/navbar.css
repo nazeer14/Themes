@@ -118,7 +118,7 @@ nav.scrolled {
 /* Dropdown */
 .ndrop {
     position: absolute;
-    top: calc(100% + 12px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(6px);
     min-width: 400px;
