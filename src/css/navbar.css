@@ -83,6 +83,7 @@ nav.scrolled {
 /* Nav item with dropdown */
 .ni {
     position: relative;
+    padding: 12px;
 }
 
 .ni-btn {
@@ -92,7 +93,7 @@ nav.scrolled {
     padding: .55rem 1rem;
     background: none;
     border: none;
-    cursor: none;
+    cursor: pointer;
     font-family: var(--mono);
     font-size: .87rem;
     letter-spacing: .10em;
@@ -116,24 +117,24 @@ nav.scrolled {
 }
 
 /* Dropdown */
+
 .ndrop {
     position: absolute;
-    top: 100%;
+    top: calc(100%,12px);
     left: 50%;
-    transform: translateX(-50%) translateY(6px);
+    transform: translateX(-50%) translateY(1px);
     min-width: 400px;
-    background: var(--bg);
+    background: var(--bg2);
     border: 1px solid var(--border-hi);
     backdrop-filter: blur(22px);
-    padding: 1.4rem;
+    padding: 12px;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform 4s;
     z-index: 800;
     box-shadow: 0 30px 80px rgba(45, 0, 67, 0.5), 0 0 0 1px rgba(65, 0, 77, 0.1);
-}
-
-.ni:hover .ndrop {
+} 
+.ni:hover .ndrop,.ndrop:hover {
     opacity: 1;
     pointer-events: all;
     transform: translateX(-50%) translateY(0);
@@ -197,8 +198,7 @@ nav.scrolled {
     font-size: .66rem;
     color: var(--text-c);
 
-}
-
+} 
 /* Right nav */
 .nav-right {
     display: flex;

@@ -131,7 +131,7 @@ body.hover #RING {
 /* ══════════════════════════════════════════════════
    NAV
 ══════════════════════════════════════════════════ */
-.nav {
+/* .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -165,7 +165,6 @@ nav.scrolled {
     padding: 1rem 5vw;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -203,14 +202,13 @@ nav.scrolled {
     color: var(--v2);
 }
 
-/* Center nav */
 .nav-mid {
     display: flex;
     align-items: center;
     gap: .2rem;
 }
 
-/* Nav item with dropdown */
+// Nav item with dropdown 
 .ni {
     position: relative;
 }
@@ -245,7 +243,7 @@ nav.scrolled {
     opacity: 1;
 }
 
-/* Dropdown */
+// Dropdown 
 .ndrop {
     position: absolute;
     top: calc(100% + 12px);
@@ -329,7 +327,7 @@ nav.scrolled {
 
 }
 
-/* Right nav */
+// Right nav 
 .nav-right {
     display: flex;
     align-items: center;
@@ -371,6 +369,7 @@ nav.scrolled {
     transform: translateY(-2px);
     box-shadow: 0 8px 32px var(--vglow), 0 0 60px rgba(108, 78, 242, .15);
 }
+ */
 
 /* ══════════════════════════════════════════════════
    HERO — SECTION 1
