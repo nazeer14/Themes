@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luminary Academy — Excellence in Education</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/school-2.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">LA</div>
+    <div class="logo-name">
+      <span>Luminary Academy</span>
+      <span>Est. 1998 · Excellence</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#facilities">Facilities</a></li>
+    <li><a href="#admissions">Admissions</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#admissions" class="nav-cta">Apply Now</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="#hero"        onclick="closeMob()">Home</a>
+  <a href="#about"       onclick="closeMob()">About</a>
+  <a href="#programs"    onclick="closeMob()">Programs</a>
+  <a href="#facilities"  onclick="closeMob()">Facilities</a>
+  <a href="#admissions"  onclick="closeMob()">Admissions</a>
+  <a href="#contact"     onclick="closeMob()">Contact</a>
+  <a href="#admissions"  class="btn-fill" onclick="closeMob()">Apply Now</a>
+</div>
+
+<!-- ──────────── HERO ──────────── -->
+<section class="hero" id="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-dots"></div>
+  <div class="ring ring-1"></div>
+  <div class="ring ring-2"></div>
+  <div class="ring ring-3"></div>
+  <div class="leaf leaf-1"></div>
+  <div class="leaf leaf-2"></div>
+  <div class="leaf leaf-3"></div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-label">
+        <div class="dot-pulse"></div>
+        <span>Ranked #1 — Academic Excellence 2026</span>
+      </div>
+
+      <h1 class="hero-h1">
+        Shaping the Future<br>
+        Through <em>Excellence</em><br>
+        in <span class="accent-word">Education</span>
+      </h1>
+
+      <p class="hero-p">
+        We cultivate curious minds, bold leaders, and compassionate global citizens.
+        Every student who walks through our doors discovers their limitless potential.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#admissions" class="btn-fill">
+          Apply Now <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#facilities" class="btn-outline">
+          <i class="fas fa-play-circle"></i> Book Campus Tour
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num">5,200<sup>+</sup></div>
+          <div class="hstat-label">Students Enrolled</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">98<sup>%</sup></div>
+          <div class="hstat-label">University Placement</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">180<sup>+</sup></div>
+          <div class="hstat-label">Expert Faculty</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-card-main">
+        <div class="visual-inner-bg">
+          <div class="visual-icon-ring">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="visual-caption">Inspiring Learners Since 1998</div>
+        </div>
+
+        <div class="visual-badge-corner">
+          <div class="bc-num">26</div>
+          <div class="bc-label">Years of<br>Excellence</div>
+        </div>
+
+        <div class="visual-pill">
+          <div class="vp-dot"></div>
+          <span class="vp-text">Admissions 2026–27 Now Open</span>
+        </div>
+      </div>
+
+      <div class="float-card float-card-1">
+        <div class="fc-label">Parent Satisfaction</div>
+        <div class="fc-value">4.9 / 5</div>
+        <div class="fc-stars">★★★★★</div>
+      </div>
+
+      <div class="float-card float-card-2">
+        <div class="fc-label">Next Open Day</div>
+        <div class="fc-value" style="font-size:15px;color:var(--ink);">Apr 15, 2026</div>
+        <div class="fc-sub">Register now →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── ABOUT ──────────── -->
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-img-cluster reveal">
+      <div class="aic-main"><i class="fas fa-university"></i></div>
+      <div class="aic-sec"><i class="fas fa-microscope"></i></div>
+      <div class="aic-badge">
+        <span class="bn">26</span>
+        <span class="bt">Years of<br>Excellence</span>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d2">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">Building <em>Bright Futures</em><br>Since 1999</h2>
+      <div class="rule-line"></div>
+      <p class="section-body">
+        Luminary Academy was founded on a singular belief — that every child possesses
+        extraordinary potential. Over 26 years, we've built an environment where academic
+        rigour meets creative freedom, producing graduates who lead industries worldwide.
+      </p>
+      <p class="section-body" style="margin-top:14px;">
+        Our 180+ passionate educators combine time-tested pedagogy with 21st-century
+        innovation, ensuring every student receives a world-class, deeply personalised education.
+      </p>
+
+      <div class="about-highlights">
+        <div class="ah-item reveal reveal-d1">
+          <div class="ah-icon"><i class="fas fa-bullseye"></i></div>
+          <div class="ah-text">
+            <h4>Our Mission</h4>
+            <p>Empowering every learner to discover, grow, and lead with integrity.</p>
+          </div>
+        </div>
+        <div class="ah-item reveal reveal-d2">
+          <div class="ah-icon"><i class="fas fa-eye"></i></div>
+          <div class="ah-text">
+            <h4>Our Vision</h4>
+            <p>To be the global benchmark for innovative, values-driven education.</p>
+          </div>
+        </div>
+        <div class="ah-item reveal reveal-d3">
+          <div class="ah-icon"><i class="fas fa-heart"></i></div>
+          <div class="ah-text">
+            <h4>Our Values</h4>
+            <p>Integrity, curiosity, compassion, and relentless excellence.</p>
+          </div>
+        </div>
+        <div class="ah-item reveal reveal-d4">
+          <div class="ah-icon"><i class="fas fa-globe"></i></div>
+          <div class="ah-text">
+            <h4>Global Outlook</h4>
+            <p>Partner schools in 40+ countries for international exposure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── PROGRAMS ──────────── -->
+<section class="programs" id="programs">
+  <div class="programs-wrap">
+    <div class="programs-head reveal">
+      <div>
+        <div class="section-label">Academics</div>
+        <h2 class="section-title">World-Class <em>Programs</em></h2>
+      </div>
+      <p class="section-body" style="margin:0;max-width:380px;">Curriculum designed by globally recognised educators to ignite passion at every stage.</p>
+    </div>
+
+    <div class="programs-grid">
+      <div class="prog-card reveal reveal-d1">
+        <div class="prog-icon"><i class="fas fa-child"></i></div>
+        <h3>Primary Education</h3>
+        <p>Play-based, inquiry-driven learning that nurtures curiosity in young minds.</p>
+        <span class="prog-tag">Grades 1–5</span>
+      </div>
+      <div class="prog-card reveal reveal-d2">
+        <div class="prog-icon"><i class="fas fa-book-open"></i></div>
+        <h3>Secondary Education</h3>
+        <p>Rigorous academics with specialisation pathways across sciences and humanities.</p>
+        <span class="prog-tag">Grades 6–12</span>
+      </div>
+      <div class="prog-card reveal reveal-d3">
+        <div class="prog-icon"><i class="fas fa-flask"></i></div>
+        <h3>STEM Programs</h3>
+        <p>Robotics, coding, engineering design, and advanced mathematics for all grades.</p>
+        <span class="prog-tag">All Grades</span>
+      </div>
+      <div class="prog-card reveal reveal-d4">
+        <div class="prog-icon"><i class="fas fa-palette"></i></div>
+        <h3>Arts & Creativity</h3>
+        <p>Fine arts, music, theatre, and digital media to foster imagination.</p>
+        <span class="prog-tag">All Grades</span>
+      </div>
+      <div class="prog-card reveal reveal-d5">
+        <div class="prog-icon"><i class="fas fa-running"></i></div>
+        <h3>Sports & Activities</h3>
+        <p>25+ sports, leadership camps, and co-curriculars building character beyond class.</p>
+        <span class="prog-tag">Year-Round</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── WHY CHOOSE ──────────── -->
+<section class="why" id="why">
+  <div class="why-wrap">
+    <div class="why-head">
+      <div class="reveal">
+        <div class="section-label">Why Us</div>
+        <h2 class="section-title">The Luminary <em>Advantage</em></h2>
+        <div class="rule-line"></div>
+        <p class="section-body">Six pillars that set us apart from every other institution in the region.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal reveal-d1">
+          <div class="wc-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Experienced Faculty</h3>
+          <p>180+ educators with an average of 15 years experience, trained at leading universities worldwide.</p>
+        </div>
+        <div class="why-card reveal reveal-d2">
+          <div class="wc-icon"><i class="fas fa-desktop"></i></div>
+          <h3>Smart Classrooms</h3>
+          <p>Every room equipped with AI-assisted boards, 5G connectivity, and adaptive learning tools.</p>
+        </div>
+        <div class="why-card reveal reveal-d3">
+          <div class="wc-icon"><i class="fas fa-globe-asia"></i></div>
+          <h3>Global Environment</h3>
+          <p>Students from 60+ nationalities creating a vibrant, culturally rich learning community.</p>
+        </div>
+        <div class="why-card reveal reveal-d1">
+          <div class="wc-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Focus on Innovation</h3>
+          <p>Dedicated innovation labs, hackathons, and entrepreneurship bootcamps from age 10 onwards.</p>
+        </div>
+        <div class="why-card reveal reveal-d2">
+          <div class="wc-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Student Development</h3>
+          <p>Holistic counselling, mentorship programmes, and personalised leadership development tracks.</p>
+        </div>
+        <div class="why-card reveal reveal-d3">
+          <div class="wc-icon"><i class="fas fa-building"></i></div>
+          <h3>Modern Campus</h3>
+          <p>48-acre eco-friendly campus with state-of-the-art infrastructure and sustainable design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── FACILITIES ──────────── -->
+<section class="facilities" id="facilities">
+  <div class="facilities-wrap">
+    <div class="facilities-head reveal">
+      <div class="section-label">Campus</div>
+      <h2 class="section-title">World-Class <em>Facilities</em></h2>
+      <p class="section-body">A learning environment designed to inspire excellence in every discipline — from literature to laboratory science.</p>
+    </div>
+
+    <div class="fac-grid">
+      <div class="fac-card reveal">
+        <div class="fac-inner"><i class="fas fa-book-reader"></i></div>
+        <div class="fac-over">
+          <span class="fac-tag">Knowledge Hub</span>
+          <h3>State-of-the-Art Library</h3>
+          <p>100,000+ volumes, digital archives, silent study pods, and 24/7 online database access.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal reveal-d1">
+        <div class="fac-inner"><i class="fas fa-atom"></i></div>
+        <div class="fac-over">
+          <span class="fac-tag">Discovery</span>
+          <h3>Science Labs</h3>
+          <p>12 fully equipped labs including biotechnology, robotics, and physics research centres.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal reveal-d2">
+        <div class="fac-inner"><i class="fas fa-laptop-code"></i></div>
+        <div class="fac-over">
+          <span class="fac-tag">Technology</span>
+          <h3>Smart Classrooms</h3>
+          <p>AI-powered interactive learning with real-time analytics and adaptive content delivery.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal reveal-d1">
+        <div class="fac-inner"><i class="fas fa-futbol"></i></div>
+        <div class="fac-over">
+          <span class="fac-tag">Athletics</span>
+          <h3>Sports Complex</h3>
+          <p>Olympic pool, cricket grounds, tennis courts, gymnasium, and indoor multi-sport arena.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── TESTIMONIALS ──────────── -->
+<section class="testimonials" id="testimonials">
+  <div class="testi-wrap">
+    <div class="testi-head reveal">
+      <div class="section-label">Voices</div>
+      <h2 class="section-title">What Our <em>Community</em> Says</h2>
+      <p class="section-body">The real measure of our success is the stories our families share.</p>
+    </div>
+
+    <div class="testi-viewport">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">Luminary Academy didn't just educate my daughter — it transformed her. She arrived shy and left with an Oxford scholarship and a genuine love for learning.</p>
+          <div class="t-author">
+            <div class="t-avatar">S</div>
+            <div>
+              <div class="t-name">Sarah Mathews</div>
+              <div class="t-role">Parent · Grade 12 Graduate</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">The STEM programme is unlike anything else. I built my first AI model at age 14. I'm now studying Computer Science at MIT — it all started here.</p>
+          <div class="t-author">
+            <div class="t-avatar">A</div>
+            <div>
+              <div class="t-name">Arjun Kapoor</div>
+              <div class="t-role">Alumni · MIT Class of 2024</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">We transferred from abroad and were worried about the transition. Luminary made our son feel at home from day one. The international community is extraordinary.</p>
+          <div class="t-author">
+            <div class="t-avatar">R</div>
+            <div>
+              <div class="t-name">Rebecca & James Liu</div>
+              <div class="t-role">Parents · International Family</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">The arts programme gave me a voice. My teachers saw something in me I hadn't seen in myself. Today I perform across Europe — but Luminary is where it began.</p>
+          <div class="t-author">
+            <div class="t-avatar">P</div>
+            <div>
+              <div class="t-name">Priya Nair</div>
+              <div class="t-role">Alumni · Professional Violinist</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">As a parent of three children attending Luminary, I can say this school has shaped our entire family. The values they instil — integrity, curiosity, kindness — reflect daily in our home.</p>
+          <div class="t-author">
+            <div class="t-avatar">M</div>
+            <div>
+              <div class="t-name">Michael Thompson</div>
+              <div class="t-role">Parent · 3 Children Enrolled</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">Sport at Luminary shaped my discipline and character. Our coaches believe every athlete has a champion inside them. I went on to captain the national under-19 cricket team.</p>
+          <div class="t-author">
+            <div class="t-avatar">K</div>
+            <div>
+              <div class="t-name">Karan Singh</div>
+              <div class="t-role">Alumni · National Athlete</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-controls">
+      <button class="testi-btn" id="testiPrev"><i class="fas fa-chevron-left"></i></button>
+      <div class="t-dots" id="testiDots"></div>
+      <button class="testi-btn" id="testiNext"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── ADMISSIONS ──────────── -->
+<section class="admissions" id="admissions">
+  <div class="admissions-wrap">
+    <div class="admissions-head reveal">
+      <div class="section-label">Admissions</div>
+      <h2 class="section-title">Your Journey <em>Starts Here</em></h2>
+      <p class="section-body" style="max-width:480px;margin:12px auto 0;">Four simple steps to becoming part of the Luminary family.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step reveal reveal-d1">
+        <div class="tl-circle">
+          <i class="fas fa-envelope-open-text"></i>
+          <span class="tl-num">01</span>
+        </div>
+        <div>
+          <h3>Inquiry</h3>
+          <p>Submit your enquiry online or visit our office. Our team responds within 24 hours.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal reveal-d2">
+        <div class="tl-circle">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="tl-num">02</span>
+        </div>
+        <div>
+          <h3>Campus Visit</h3>
+          <p>Book a personalised tour. Meet faculty, explore facilities, and experience our community.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal reveal-d3">
+        <div class="tl-circle">
+          <i class="fas fa-file-alt"></i>
+          <span class="tl-num">03</span>
+        </div>
+        <div>
+          <h3>Application</h3>
+          <p>Complete the form, submit documents, and attend the assessment session.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal reveal-d4">
+        <div class="tl-circle">
+          <i class="fas fa-check-circle"></i>
+          <span class="tl-num">04</span>
+        </div>
+        <div>
+          <h3>Enrollment</h3>
+          <p>Receive your offer and officially become a member of the Luminary community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── CTA ──────────── -->
+<section class="cta-band">
+  <div class="cta-inner reveal">
+    <h2>Give Your Child the Future<br><em>They Deserve</em></h2>
+    <p>Admissions for 2025–2026 are now open. Limited places available across all year groups.</p>
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:12px;">
+      <a href="#admissions" class="btn-cta-white">
+        Start Your Child's Journey <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn-cta-ghost">
+        Speak to Admissions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── FOOTER ──────────── -->
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="fb-logo-wrap">
+        <div class="logo-mark">LA</div>
+        <div class="logo-name">
+          <span style="color:rgba(250,247,242,0.8);display:block;font-family:'Playfair Display',serif;font-weight:700;font-size:15px;">Luminary Academy</span>
+          <span style="font-size:10px;color:rgba(250,247,242,0.3);letter-spacing:2.5px;text-transform:uppercase;font-weight:500;">Est. 1998 · Excellence</span>
+        </div>
+      </div>
+      <p class="fb-p">Committed to nurturing academic excellence, character, and global citizenship since 1998. Where every student's potential is limitless.</p>
+      <div class="social-row">
+        <a href="#" class="soc-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="soc-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="soc-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="soc-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="soc-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="fcol">
+      <h4>Quick Links</h4>
+      <ul class="flinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Academic Programs</a></li>
+        <li><a href="#facilities">Campus Facilities</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="fcol">
+      <h4>Academics</h4>
+      <ul class="flinks">
+        <li><a href="#">Primary Education</a></li>
+        <li><a href="#">Secondary Education</a></li>
+        <li><a href="#">STEM Programs</a></li>
+        <li><a href="#">Arts & Creativity</a></li>
+        <li><a href="#">Sports Academy</a></li>
+        <li><a href="#">Scholarships</a></li>
+      </ul>
+    </div>
+
+    <div class="fcol">
+      <h4>Contact Us</h4>
+      <div class="fcontact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>48 Luminary Boulevard, Education City, New Delhi 110001, India</span>
+      </div>
+      <div class="fcontact-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 11 4567 8900</span>
+      </div>
+      <div class="fcontact-item">
+        <i class="fas fa-envelope"></i>
+        <span>admissions@luminaryacademy.edu.in</span>
+      </div>
+      <div class="fcontact-item">
+        <i class="fas fa-clock"></i>
+        <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 <span>Luminary Academy</span>. All rights reserved.</p>
+    <p>Crafted with <span>♥</span> for brighter futures</p>
+    <div style="display:flex;gap:20px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Ai Web Design Services</a>
+    </div>
+  </div>
+</footer>
+<script src="../js/school-2.js"></script>
+</body>
+</html>
