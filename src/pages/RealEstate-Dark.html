@@ -1,814 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vastu Prestige — Luxury Real Estate India</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/realestate-dark.css">
-<link rel="stylesheet" href="../css/navbar.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vastu Prestige — Luxury Real Estate India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/realestate-dark.css">
+  <link rel="stylesheet" href="../css/navbar.css">
 </head>
+
 <body>
 
 
-<div class="cur" id="cur"></div>
-<div class="cur-ring" id="curRing"></div>
+  <div class="cur" id="cur"></div>
+  <div class="cur-ring" id="curRing"></div>
+<!-- 
+  <nav id="nav"></nav> -->
 
-<nav id="nav"></nav>
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-arch"></div>
 
-<section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-arch"></div>
-
-  <div class="hero-content">
-    <div class="hero-tag">Est. 2009 — Pan-India Luxury Real Estate</div>
-    <h1>Where<br><em>Legacy</em><br>Finds Home.</h1>
-    <div class="hero-location">
-      <span><div class="dot"></div> Mumbai</span>
-      <span><div class="dot"></div> Delhi</span>
-      <span><div class="dot"></div> Bangalore</span>
-      <span><div class="dot"></div> Hyderabad</span>
+    <div class="hero-content">
+      <div class="hero-tag">Est. 2009 — Pan-India Luxury Real Estate</div>
+      <h1>Where<br><em>Legacy</em><br>Finds Home.</h1>
+      <div class="hero-location">
+        <span>
+          <div class="dot"></div> Mumbai
+        </span>
+        <span>
+          <div class="dot"></div> Delhi
+        </span>
+        <span>
+          <div class="dot"></div> Bangalore
+        </span>
+        <span>
+          <div class="dot"></div> Hyderabad
+        </span>
+      </div>
+      <p class="hero-desc">Curating India's most distinguished addresses — from heritage residences in South Delhi to
+        sky villas above the Arabian Sea.</p>
+      <div class="hero-btns">
+        <a href="#properties" class="btn-primary"><span>Explore Properties</span> →</a>
+        <a href="#contact" class="btn-ghost"><span>Book a Consultation</span></a>
+      </div>
     </div>
-    <p class="hero-desc">Curating India's most distinguished addresses — from heritage residences in South Delhi to sky villas above the Arabian Sea.</p>
-    <div class="hero-btns">
-      <a href="#properties" class="btn-primary"><span>Explore Properties</span> →</a>
-      <a href="#contact" class="btn-ghost"><span>Book a Consultation</span></a>
+
+    <div class="hero-bar">
+      <div class="hero-stat">
+        <div class="hero-stat-num">15<sup>+</sup></div>
+        <div class="hero-stat-label">Years of Excellence</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">2,400<sup>+</sup></div>
+        <div class="hero-stat-label">Properties Sold</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">₹12k<sup>Cr</sup></div>
+        <div class="hero-stat-label">Transactions Closed</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">28</div>
+        <div class="hero-stat-label">Cities Served</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item">Luxury Villas <span class="sep">·</span></div>
+      <div class="marquee-item">Sea-Facing Penthouses <span class="sep">·</span></div>
+      <div class="marquee-item">Heritage Bungalows <span class="sep">·</span></div>
+      <div class="marquee-item">Golf Course Residences <span class="sep">·</span></div>
+      <div class="marquee-item">Smart Apartments <span class="sep">·</span></div>
+      <div class="marquee-item">Commercial Spaces <span class="sep">·</span></div>
+      <div class="marquee-item">Farmhouses &amp; Estates <span class="sep">·</span></div>
+      <div class="marquee-item">NRI Investment Services <span class="sep">·</span></div>
+      <div class="marquee-item">Luxury Villas <span class="sep">·</span></div>
+      <div class="marquee-item">Sea-Facing Penthouses <span class="sep">·</span></div>
+      <div class="marquee-item">Heritage Bungalows <span class="sep">·</span></div>
+      <div class="marquee-item">Golf Course Residences <span class="sep">·</span></div>
+      <div class="marquee-item">Smart Apartments <span class="sep">·</span></div>
+      <div class="marquee-item">Commercial Spaces <span class="sep">·</span></div>
+      <div class="marquee-item">Farmhouses &amp; Estates <span class="sep">·</span></div>
+      <div class="marquee-item">NRI Investment Services <span class="sep">·</span></div>
     </div>
   </div>
 
-  <div class="hero-bar">
-    <div class="hero-stat">
-      <div class="hero-stat-num">15<sup>+</sup></div>
-      <div class="hero-stat-label">Years of Excellence</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">2,400<sup>+</sup></div>
-      <div class="hero-stat-label">Properties Sold</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">₹12k<sup>Cr</sup></div>
-      <div class="hero-stat-label">Transactions Closed</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">28</div>
-      <div class="hero-stat-label">Cities Served</div>
-    </div>
-  </div>
-</section>
-
-<div class="marquee-section">
-  <div class="marquee-track" id="marqueeTrack">
-    <div class="marquee-item">Luxury Villas <span class="sep">·</span></div>
-    <div class="marquee-item">Sea-Facing Penthouses <span class="sep">·</span></div>
-    <div class="marquee-item">Heritage Bungalows <span class="sep">·</span></div>
-    <div class="marquee-item">Golf Course Residences <span class="sep">·</span></div>
-    <div class="marquee-item">Smart Apartments <span class="sep">·</span></div>
-    <div class="marquee-item">Commercial Spaces <span class="sep">·</span></div>
-    <div class="marquee-item">Farmhouses &amp; Estates <span class="sep">·</span></div>
-    <div class="marquee-item">NRI Investment Services <span class="sep">·</span></div>
-    <div class="marquee-item">Luxury Villas <span class="sep">·</span></div>
-    <div class="marquee-item">Sea-Facing Penthouses <span class="sep">·</span></div>
-    <div class="marquee-item">Heritage Bungalows <span class="sep">·</span></div>
-    <div class="marquee-item">Golf Course Residences <span class="sep">·</span></div>
-    <div class="marquee-item">Smart Apartments <span class="sep">·</span></div>
-    <div class="marquee-item">Commercial Spaces <span class="sep">·</span></div>
-    <div class="marquee-item">Farmhouses &amp; Estates <span class="sep">·</span></div>
-    <div class="marquee-item">NRI Investment Services <span class="sep">·</span></div>
-  </div>
-</div>
-
-<section class="properties" id="properties">
-  <div class="section-header reveal">
-    <div class="section-title-block">
-      <div class="section-label">Featured Listings</div>
-      <h2 class="section-title">Handpicked<br><em>residences</em>.</h2>
-    </div>
-    <a href="#" class="section-link">View all listings →</a>
-  </div>
-
-  <div class="props-grid">
-
-    <div class="prop-card featured reveal">
-      <div class="prop-visual">
-        <svg class="prop-svg" viewBox="0 0 500 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="500" height="700" fill="#141210"/>
-
-          <defs>
-            <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1a1208" stop-opacity="1"/>
-              <stop offset="100%" stop-color="#0d0b08" stop-opacity="1"/>
-            </linearGradient>
-            <radialGradient id="glow1" cx="50%" cy="30%" r="50%">
-              <stop offset="0%" stop-color="#c17f50" stop-opacity="0.08"/>
-              <stop offset="100%" stop-color="#c17f50" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="500" height="700" fill="url(#sky1)"/>
-          <rect width="500" height="700" fill="url(#glow1)"/>
-
-          <circle cx="80" cy="60" r="1" fill="#c8bfaf" opacity=".4"/>
-          <circle cx="200" cy="40" r="1.2" fill="#c8bfaf" opacity=".3"/>
-          <circle cx="350" cy="80" r=".8" fill="#c8bfaf" opacity=".5"/>
-          <circle cx="420" cy="50" r="1" fill="#c8bfaf" opacity=".3"/>
-          <circle cx="140" cy="100" r=".7" fill="#c8bfaf" opacity=".4"/>
-
-          <rect x="150" y="200" width="200" height="500" fill="#1e1a15"/>
-          <g opacity=".6">
-            <rect x="170" y="220" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="170" y="245" width="22" height="14" fill="#c9a96e" opacity=".3"/>
-            <rect x="170" y="270" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="170" y="295" width="22" height="14" fill="#c9a96e" opacity=".25"/>
-            <rect x="170" y="320" width="22" height="14" fill="#c9a96e" opacity=".2"/>
-            <rect x="170" y="345" width="22" height="14" fill="#c9a96e" opacity=".35"/>
-            <rect x="170" y="370" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="170" y="395" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="205" y="220" width="22" height="14" fill="#c9a96e" opacity=".2"/>
-            <rect x="205" y="245" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="205" y="270" width="22" height="14" fill="#c9a96e" opacity=".4"/>
-            <rect x="205" y="295" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="205" y="320" width="22" height="14" fill="#c9a96e" opacity=".3"/>
-            <rect x="205" y="345" width="22" height="14" fill="#c9a96e" opacity=".25"/>
-            <rect x="205" y="370" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="205" y="395" width="22" height="14" fill="#c9a96e" opacity=".35"/>
-            <rect x="240" y="220" width="22" height="14" fill="#c9a96e" opacity=".35"/>
-            <rect x="240" y="245" width="22" height="14" fill="#c9a96e" opacity=".2"/>
-            <rect x="240" y="270" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="240" y="295" width="22" height="14" fill="#c9a96e" opacity=".4"/>
-            <rect x="240" y="320" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="240" y="345" width="22" height="14" fill="#c9a96e" opacity=".3"/>
-            <rect x="240" y="370" width="22" height="14" fill="#c9a96e" opacity=".25"/>
-            <rect x="240" y="395" width="22" height="14" fill="#c9a96e" opacity=".2"/>
-            <rect x="275" y="220" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="275" y="245" width="22" height="14" fill="#c9a96e" opacity=".35"/>
-            <rect x="275" y="270" width="22" height="14" fill="#c9a96e" opacity=".25"/>
-            <rect x="275" y="295" width="22" height="14" fill="#c9a96e" opacity=".15"/>
-            <rect x="275" y="320" width="22" height="14" fill="#c9a96e" opacity=".4"/>
-            <rect x="275" y="345" width="22" height="14" fill="#c9a96e" opacity=".1"/>
-            <rect x="275" y="370" width="22" height="14" fill="#c9a96e" opacity=".3"/>
-            <rect x="275" y="395" width="22" height="14" fill="#c9a96e" opacity=".2"/>
-          </g>
-          <rect x="175" y="160" width="150" height="45" fill="#221e18"/>
-          <rect x="200" y="170" width="30" height="25" fill="#c9a96e" opacity=".2"/>
-          <rect x="240" y="170" width="30" height="25" fill="#c9a96e" opacity=".15"/>
-          <rect x="280" y="170" width="30" height="25" fill="#c9a96e" opacity=".25"/>
-          <rect x="243" y="120" width="14" height="45" fill="#2a2520"/>
-          <circle cx="250" cy="118" r="4" fill="#c9a96e" opacity=".5"/>
-          <rect x="0" y="580" width="150" height="120" fill="#110f0c"/>
-          <rect x="370" y="560" width="130" height="140" fill="#110f0c"/>
-          <rect x="0" y="650" width="500" height="50" fill="#0c0a07"/>
-          <rect x="160" y="660" width="180" height="8" fill="#c9a96e" opacity=".08"/>
-        </svg>
-        <div class="prop-overlay"></div>
-        <div class="prop-tag">New Launch</div>
-        <div class="prop-info">
-          <div class="prop-type">Sky Villa</div>
-          <div class="prop-name">Altair Sky<br>Residences</div>
-          <div class="prop-city">Worli Sea Face, Mumbai</div>
-          <div class="prop-price">₹ 18.5 Cr onwards <span>/ 4 BHK</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="prop-card reveal reveal-d1">
-      <div class="prop-visual">
-        <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
-          <defs>
-            <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#12100e"/>
-              <stop offset="100%" stop-color="#0c0a08"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#sky2)"/>
-          <rect width="400" height="300" fill="#7a9e7e" opacity=".03"/>
-          <rect x="60" y="130" width="280" height="140" fill="#1e1a14"/>
-          <polygon points="40,130 200,60 360,130" fill="#221e16"/>
-          <rect x="90" y="140" width="12" height="130" fill="#2a2520"/>
-          <rect x="160" y="140" width="12" height="130" fill="#2a2520"/>
-          <rect x="228" y="140" width="12" height="130" fill="#2a2520"/>
-          <rect x="298" y="140" width="12" height="130" fill="#2a2520"/>
-          <rect x="100" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".12"/>
-          <rect x="180" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".2"/>
-          <rect x="260" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".1"/>
-          <rect x="174" y="220" width="52" height="50" rx="26" ry="5" fill="#c9a96e" opacity=".15"/>
-          <circle cx="200" cy="90" r="6" fill="#c9a96e" opacity=".25"/>
-          <line x1="200" y1="84" x2="200" y2="64" stroke="#c9a96e" stroke-width=".8" opacity=".3"/>
-          <rect x="0" y="265" width="400" height="35" fill="#0a0907"/>
-          <rect x="40" y="260" width="320" height="10" fill="#2a3a2a" opacity=".4"/>
-          <ellipse cx="30" cy="200" rx="20" ry="35" fill="#1e2e1e" opacity=".6"/>
-          <ellipse cx="370" cy="200" rx="20" ry="35" fill="#1e2e1e" opacity=".6"/>
-          <rect x="27" y="230" width="6" height="35" fill="#1a1610"/>
-          <rect x="367" y="230" width="6" height="35" fill="#1a1610"/>
-        </svg>
-        <div class="prop-overlay"></div>
-        <div class="prop-tag">Heritage</div>
-        <div class="prop-info">
-          <div class="prop-type">Bungalow</div>
-          <div class="prop-name">Lutyens Retreat</div>
-          <div class="prop-city">Lutyens' Bungalow Zone, Delhi</div>
-          <div class="prop-price">₹ 45 Cr <span>/ 6 BHK</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="prop-card reveal reveal-d2">
-      <div class="prop-visual">
-        <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
-          <defs>
-            <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#0e1210"/>
-              <stop offset="100%" stop-color="#090c0a"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="300" fill="url(#sky3)"/>
-          <ellipse cx="50" cy="180" rx="35" ry="50" fill="#1a2a1a" opacity=".5"/>
-          <ellipse cx="350" cy="160" rx="40" ry="60" fill="#1a2a1a" opacity=".4"/>
-          <ellipse cx="180" cy="90" rx="50" ry="40" fill="#1a2a1a" opacity=".3"/>
-          <rect x="80" y="160" width="240" height="110" fill="#1c1a14"/>
-          <rect x="60" y="140" width="280" height="30" fill="#221e16"/>
-          <rect x="50" y="132" width="300" height="12" fill="#2a2620"/>
-          <rect x="95" y="165" width="50" height="80" fill="#c9a96e" opacity=".1"/>
-          <rect x="155" y="165" width="50" height="80" fill="#c9a96e" opacity=".18"/>
-          <rect x="215" y="165" width="50" height="80" fill="#c9a96e" opacity=".12"/>
-          <rect x="275" y="165" width="30" height="80" fill="#c9a96e" opacity=".08"/>
-          <rect x="185" y="210" width="30" height="60" fill="#c9a96e" opacity=".15"/>
-          <rect x="100" y="245" width="200" height="20" rx="3" fill="#7a9e9e" opacity=".15"/>
-          <rect x="100" y="245" width="200" height="4" fill="#c9a96e" opacity=".06"/>
-          <rect x="0" y="260" width="400" height="40" fill="#0a0907"/>
-          <rect x="0" y="255" width="400" height="12" fill="#1e2e1a" opacity=".5"/>
-        </svg>
-        <div class="prop-overlay"></div>
-        <div class="prop-tag">Golf View</div>
-        <div class="prop-info">
-          <div class="prop-type">Villa</div>
-          <div class="prop-name">Prestige Greens</div>
-          <div class="prop-city">Whitefield, Bangalore</div>
-          <div class="prop-price">₹ 8.2 Cr <span>/ 5 BHK</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="prop-card reveal reveal-d3">
-      <div class="prop-visual">
-        <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
-          <rect width="400" height="300" fill="#0e0c0a"/>
-          <rect width="400" height="300" fill="#c17f50" opacity=".03"/>
-          <rect x="80" y="100" width="100" height="200" fill="#1c1810"/>
-          <rect x="200" y="130" width="120" height="170" fill="#1a1610"/>
-          <rect x="50" y="170" width="60" height="130" fill="#181410"/>
-          <g opacity=".5">
-            <rect x="95" y="115" width="15" height="10" fill="#c9a96e" opacity=".2"/>
-            <rect x="120" y="115" width="15" height="10" fill="#c9a96e" opacity=".15"/>
-            <rect x="145" y="115" width="15" height="10" fill="#c9a96e" opacity=".3"/>
-            <rect x="95" y="135" width="15" height="10" fill="#c9a96e" opacity=".1"/>
-            <rect x="120" y="135" width="15" height="10" fill="#c9a96e" opacity=".25"/>
-            <rect x="145" y="135" width="15" height="10" fill="#c9a96e" opacity=".15"/>
-            <rect x="95" y="155" width="15" height="10" fill="#c9a96e" opacity=".3"/>
-            <rect x="120" y="155" width="15" height="10" fill="#c9a96e" opacity=".1"/>
-            <rect x="215" y="145" width="15" height="10" fill="#c9a96e" opacity=".2"/>
-            <rect x="240" y="145" width="15" height="10" fill="#c9a96e" opacity=".35"/>
-            <rect x="265" y="145" width="15" height="10" fill="#c9a96e" opacity=".1"/>
-            <rect x="290" y="145" width="15" height="10" fill="#c9a96e" opacity=".25"/>
-            <rect x="215" y="165" width="15" height="10" fill="#c9a96e" opacity=".15"/>
-            <rect x="240" y="165" width="15" height="10" fill="#c9a96e" opacity=".2"/>
-          </g>
-          <!-- Dome ornament -->
-          <ellipse cx="130" cy="103" rx="18" ry="12" fill="#221e16"/>
-          <!-- Ground -->
-          <rect x="0" y="270" width="400" height="30" fill="#080706"/>
-        </svg>
-        <div class="prop-overlay"></div>
-        <div class="prop-tag">Prime</div>
-        <div class="prop-info">
-          <div class="prop-type">Penthouse</div>
-          <div class="prop-name">Kokapet Heights</div>
-          <div class="prop-city">Financial District, Hyderabad</div>
-          <div class="prop-price">₹ 6.8 Cr <span>/ 4 BHK</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     S4 — MARKET INSIGHT
-══════════════════════════════════════════ -->
-<section class="market" id="about">
-  <div class="market-inner">
-    <!-- Visual -->
-    <div class="market-visual reveal">
-      <div class="market-ring-wrap">
-        <div class="market-ring"></div>
-        <div class="market-ring2"></div>
-        <div class="market-center">
-          <div class="market-big">₹65<sup>L Cr</sup></div>
-          <div class="market-big-label">India Real Estate Market 2024</div>
-        </div>
-      </div>
-    </div>
-    <!-- Points -->
-    <div class="market-points">
-      <div class="section-label reveal">Why India Now</div>
-      <h2 class="section-title reveal" style="margin-bottom:2.5rem;">The world's most<br><em>compelling</em><br>property market.</h2>
-      <div class="market-point reveal reveal-d1">
-        <div class="mp-num">01</div>
-        <div class="mp-title">Fastest Growing Economy</div>
-        <div class="mp-desc">India's GDP growth at 7.6% makes it the world's fastest-growing major economy, with real estate prices appreciating 12–18% YoY in prime corridors.</div>
-      </div>
-      <div class="market-point reveal reveal-d2">
-        <div class="mp-num">02</div>
-        <div class="mp-title">NRI Investment Boom</div>
-        <div class="mp-desc">$13.1 billion in NRI real estate investments in FY24, driven by favorable FEMA regulations and the rupee's long-term strengthening trajectory.</div>
-      </div>
-      <div class="market-point reveal reveal-d3">
-        <div class="mp-num">03</div>
-        <div class="mp-title">Smart Cities Infrastructure</div>
-        <div class="mp-desc">₹2.05 lakh crore allocated under PM Gati Shakti, transforming tier-2 cities into premium investment destinations with world-class connectivity.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     S5 — CITIES
-══════════════════════════════════════════ -->
-<section class="cities" id="cities">
-  <div class="cities-inner">
+  <section class="properties" id="properties">
     <div class="section-header reveal">
       <div class="section-title-block">
-        <div class="section-label">Our Markets</div>
-        <h2 class="section-title">Prime <em>cities</em>,<br>curated listings.</h2>
+        <div class="section-label">Featured Listings</div>
+        <h2 class="section-title">Handpicked<br><em>residences</em>.</h2>
       </div>
-      <a href="#" class="section-link">All cities →</a>
+      <a href="#" class="section-link">View all listings →</a>
     </div>
-    <div class="cities-grid">
 
-      <!-- Mumbai -->
-      <div class="city-card reveal">
-        <div class="city-bg">
-          <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
-            <rect width="220" height="290" fill="#0f0d0b"/>
-            <rect width="220" height="290" fill="#c17f50" opacity=".04"/>
-            <!-- Sea line -->
-            <rect x="0" y="200" width="220" height="90" fill="#0c0e10" opacity=".5"/>
-            <rect x="0" y="195" width="220" height="8" fill="#7a9e9e" opacity=".08"/>
-            <!-- Buildings skyline -->
-            <rect x="10" y="120" width="30" height="180" fill="#1a1612"/>
-            <rect x="15" y="100" width="20" height="25" fill="#1e1a14"/>
-            <rect x="50" y="80" width="40" height="220" fill="#1c1810"/>
-            <rect x="60" y="60" width="20" height="25" fill="#221e16"/>
-            <rect x="100" y="100" width="35" height="200" fill="#181410"/>
-            <rect x="140" y="70" width="45" height="230" fill="#1c1a12"/>
-            <rect x="153" y="50" width="20" height="25" fill="#201c16"/>
-            <rect x="190" y="110" width="30" height="180" fill="#181410"/>
-            <!-- Windows -->
-            <rect x="55" y="90" width="6" height="4" fill="#c9a96e" opacity=".3"/>
-            <rect x="65" y="90" width="6" height="4" fill="#c9a96e" opacity=".15"/>
-            <rect x="55" y="100" width="6" height="4" fill="#c9a96e" opacity=".2"/>
-            <rect x="65" y="100" width="6" height="4" fill="#c9a96e" opacity=".35"/>
-            <rect x="145" y="80" width="6" height="4" fill="#c9a96e" opacity=".25"/>
-            <rect x="155" y="80" width="6" height="4" fill="#c9a96e" opacity=".1"/>
-            <rect x="165" y="80" width="6" height="4" fill="#c9a96e" opacity=".3"/>
+    <div class="props-grid">
+
+      <div class="prop-card featured reveal">
+        <div class="prop-visual">
+          <svg class="prop-svg" viewBox="0 0 500 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="500" height="700" fill="#141210" />
+
+            <defs>
+              <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1a1208" stop-opacity="1" />
+                <stop offset="100%" stop-color="#0d0b08" stop-opacity="1" />
+              </linearGradient>
+              <radialGradient id="glow1" cx="50%" cy="30%" r="50%">
+                <stop offset="0%" stop-color="#c17f50" stop-opacity="0.08" />
+                <stop offset="100%" stop-color="#c17f50" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <rect width="500" height="700" fill="url(#sky1)" />
+            <rect width="500" height="700" fill="url(#glow1)" />
+
+            <circle cx="80" cy="60" r="1" fill="#c8bfaf" opacity=".4" />
+            <circle cx="200" cy="40" r="1.2" fill="#c8bfaf" opacity=".3" />
+            <circle cx="350" cy="80" r=".8" fill="#c8bfaf" opacity=".5" />
+            <circle cx="420" cy="50" r="1" fill="#c8bfaf" opacity=".3" />
+            <circle cx="140" cy="100" r=".7" fill="#c8bfaf" opacity=".4" />
+
+            <rect x="150" y="200" width="200" height="500" fill="#1e1a15" />
+            <g opacity=".6">
+              <rect x="170" y="220" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="170" y="245" width="22" height="14" fill="#c9a96e" opacity=".3" />
+              <rect x="170" y="270" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="170" y="295" width="22" height="14" fill="#c9a96e" opacity=".25" />
+              <rect x="170" y="320" width="22" height="14" fill="#c9a96e" opacity=".2" />
+              <rect x="170" y="345" width="22" height="14" fill="#c9a96e" opacity=".35" />
+              <rect x="170" y="370" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="170" y="395" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="205" y="220" width="22" height="14" fill="#c9a96e" opacity=".2" />
+              <rect x="205" y="245" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="205" y="270" width="22" height="14" fill="#c9a96e" opacity=".4" />
+              <rect x="205" y="295" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="205" y="320" width="22" height="14" fill="#c9a96e" opacity=".3" />
+              <rect x="205" y="345" width="22" height="14" fill="#c9a96e" opacity=".25" />
+              <rect x="205" y="370" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="205" y="395" width="22" height="14" fill="#c9a96e" opacity=".35" />
+              <rect x="240" y="220" width="22" height="14" fill="#c9a96e" opacity=".35" />
+              <rect x="240" y="245" width="22" height="14" fill="#c9a96e" opacity=".2" />
+              <rect x="240" y="270" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="240" y="295" width="22" height="14" fill="#c9a96e" opacity=".4" />
+              <rect x="240" y="320" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="240" y="345" width="22" height="14" fill="#c9a96e" opacity=".3" />
+              <rect x="240" y="370" width="22" height="14" fill="#c9a96e" opacity=".25" />
+              <rect x="240" y="395" width="22" height="14" fill="#c9a96e" opacity=".2" />
+              <rect x="275" y="220" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="275" y="245" width="22" height="14" fill="#c9a96e" opacity=".35" />
+              <rect x="275" y="270" width="22" height="14" fill="#c9a96e" opacity=".25" />
+              <rect x="275" y="295" width="22" height="14" fill="#c9a96e" opacity=".15" />
+              <rect x="275" y="320" width="22" height="14" fill="#c9a96e" opacity=".4" />
+              <rect x="275" y="345" width="22" height="14" fill="#c9a96e" opacity=".1" />
+              <rect x="275" y="370" width="22" height="14" fill="#c9a96e" opacity=".3" />
+              <rect x="275" y="395" width="22" height="14" fill="#c9a96e" opacity=".2" />
+            </g>
+            <rect x="175" y="160" width="150" height="45" fill="#221e18" />
+            <rect x="200" y="170" width="30" height="25" fill="#c9a96e" opacity=".2" />
+            <rect x="240" y="170" width="30" height="25" fill="#c9a96e" opacity=".15" />
+            <rect x="280" y="170" width="30" height="25" fill="#c9a96e" opacity=".25" />
+            <rect x="243" y="120" width="14" height="45" fill="#2a2520" />
+            <circle cx="250" cy="118" r="4" fill="#c9a96e" opacity=".5" />
+            <rect x="0" y="580" width="150" height="120" fill="#110f0c" />
+            <rect x="370" y="560" width="130" height="140" fill="#110f0c" />
+            <rect x="0" y="650" width="500" height="50" fill="#0c0a07" />
+            <rect x="160" y="660" width="180" height="8" fill="#c9a96e" opacity=".08" />
           </svg>
-        </div>
-        <div class="city-overlay"></div>
-        <div class="city-arrow">→</div>
-        <div class="city-info">
-          <div class="city-name">Mumbai</div>
-          <div class="city-listings">142 listings</div>
+          <div class="prop-overlay"></div>
+          <div class="prop-tag">New Launch</div>
+          <div class="prop-info">
+            <div class="prop-type">Sky Villa</div>
+            <div class="prop-name">Altair Sky<br>Residences</div>
+            <div class="prop-city">Worli Sea Face, Mumbai</div>
+            <div class="prop-price">₹ 18.5 Cr onwards <span>/ 4 BHK</span></div>
+          </div>
         </div>
       </div>
 
-      <!-- Delhi -->
-      <div class="city-card reveal reveal-d1">
-        <div class="city-bg">
-          <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
-            <rect width="220" height="290" fill="#0d0c0a"/>
-            <!-- India Gate silhouette -->
-            <rect x="85" y="170" width="50" height="120" fill="#181410"/>
-            <rect x="80" y="155" width="60" height="20" fill="#1e1a14"/>
-            <rect x="95" y="120" width="30" height="40" fill="#1a1610"/>
-            <ellipse cx="110" cy="120" rx="15" ry="5" fill="#221e16"/>
-            <rect x="107" y="90" width="6" height="35" fill="#201c16"/>
-            <circle cx="110" cy="88" r="4" fill="#c9a96e" opacity=".3"/>
-            <!-- Wings -->
-            <rect x="50" y="168" width="40" height="8" fill="#1c1810"/>
-            <rect x="130" y="168" width="40" height="8" fill="#1c1810"/>
-            <!-- Buildings bg -->
-            <rect x="0" y="130" width="50" height="160" fill="#151210" opacity=".7"/>
-            <rect x="180" y="120" width="40" height="170" fill="#151210" opacity=".7"/>
-            <!-- Haze -->
-            <rect x="0" y="0" width="220" height="130" fill="#100e0c"/>
-            <rect x="0" y="80" width="220" height="60" fill="#c9a96e" opacity=".015"/>
+      <div class="prop-card reveal reveal-d1">
+        <div class="prop-visual">
+          <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
+            <defs>
+              <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#12100e" />
+                <stop offset="100%" stop-color="#0c0a08" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#sky2)" />
+            <rect width="400" height="300" fill="#7a9e7e" opacity=".03" />
+            <rect x="60" y="130" width="280" height="140" fill="#1e1a14" />
+            <polygon points="40,130 200,60 360,130" fill="#221e16" />
+            <rect x="90" y="140" width="12" height="130" fill="#2a2520" />
+            <rect x="160" y="140" width="12" height="130" fill="#2a2520" />
+            <rect x="228" y="140" width="12" height="130" fill="#2a2520" />
+            <rect x="298" y="140" width="12" height="130" fill="#2a2520" />
+            <rect x="100" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".12" />
+            <rect x="180" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".2" />
+            <rect x="260" y="160" width="40" height="55" rx="20" ry="20" fill="#c9a96e" opacity=".1" />
+            <rect x="174" y="220" width="52" height="50" rx="26" ry="5" fill="#c9a96e" opacity=".15" />
+            <circle cx="200" cy="90" r="6" fill="#c9a96e" opacity=".25" />
+            <line x1="200" y1="84" x2="200" y2="64" stroke="#c9a96e" stroke-width=".8" opacity=".3" />
+            <rect x="0" y="265" width="400" height="35" fill="#0a0907" />
+            <rect x="40" y="260" width="320" height="10" fill="#2a3a2a" opacity=".4" />
+            <ellipse cx="30" cy="200" rx="20" ry="35" fill="#1e2e1e" opacity=".6" />
+            <ellipse cx="370" cy="200" rx="20" ry="35" fill="#1e2e1e" opacity=".6" />
+            <rect x="27" y="230" width="6" height="35" fill="#1a1610" />
+            <rect x="367" y="230" width="6" height="35" fill="#1a1610" />
           </svg>
-        </div>
-        <div class="city-overlay"></div>
-        <div class="city-arrow">→</div>
-        <div class="city-info">
-          <div class="city-name">New Delhi</div>
-          <div class="city-listings">98 listings</div>
+          <div class="prop-overlay"></div>
+          <div class="prop-tag">Heritage</div>
+          <div class="prop-info">
+            <div class="prop-type">Bungalow</div>
+            <div class="prop-name">Lutyens Retreat</div>
+            <div class="prop-city">Lutyens' Bungalow Zone, Delhi</div>
+            <div class="prop-price">₹ 45 Cr <span>/ 6 BHK</span></div>
+          </div>
         </div>
       </div>
 
-      <!-- Bangalore -->
-      <div class="city-card reveal reveal-d2">
-        <div class="city-bg">
-          <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
-            <rect width="220" height="290" fill="#0c0f0c"/>
-            <!-- Green hills bg -->
-            <ellipse cx="50" cy="250" rx="80" ry="60" fill="#1a2a1a" opacity=".4"/>
-            <ellipse cx="180" cy="260" rx="80" ry="50" fill="#1a2a1a" opacity=".3"/>
-            <!-- Tech park buildings -->
-            <rect x="30" y="130" width="60" height="160" fill="#141e14"/>
-            <rect x="100" y="100" width="70" height="190" fill="#161e14"/>
-            <rect x="180" y="150" width="40" height="140" fill="#141c12"/>
-            <!-- Glass facades -->
-            <rect x="35" y="140" width="50" height="100" fill="#7a9e7e" opacity=".04"/>
-            <rect x="105" y="110" width="60" height="120" fill="#7a9e7e" opacity=".05"/>
-            <!-- Windows grid -->
+      <div class="prop-card reveal reveal-d2">
+        <div class="prop-visual">
+          <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
+            <defs>
+              <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0e1210" />
+                <stop offset="100%" stop-color="#090c0a" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#sky3)" />
+            <ellipse cx="50" cy="180" rx="35" ry="50" fill="#1a2a1a" opacity=".5" />
+            <ellipse cx="350" cy="160" rx="40" ry="60" fill="#1a2a1a" opacity=".4" />
+            <ellipse cx="180" cy="90" rx="50" ry="40" fill="#1a2a1a" opacity=".3" />
+            <rect x="80" y="160" width="240" height="110" fill="#1c1a14" />
+            <rect x="60" y="140" width="280" height="30" fill="#221e16" />
+            <rect x="50" y="132" width="300" height="12" fill="#2a2620" />
+            <rect x="95" y="165" width="50" height="80" fill="#c9a96e" opacity=".1" />
+            <rect x="155" y="165" width="50" height="80" fill="#c9a96e" opacity=".18" />
+            <rect x="215" y="165" width="50" height="80" fill="#c9a96e" opacity=".12" />
+            <rect x="275" y="165" width="30" height="80" fill="#c9a96e" opacity=".08" />
+            <rect x="185" y="210" width="30" height="60" fill="#c9a96e" opacity=".15" />
+            <rect x="100" y="245" width="200" height="20" rx="3" fill="#7a9e9e" opacity=".15" />
+            <rect x="100" y="245" width="200" height="4" fill="#c9a96e" opacity=".06" />
+            <rect x="0" y="260" width="400" height="40" fill="#0a0907" />
+            <rect x="0" y="255" width="400" height="12" fill="#1e2e1a" opacity=".5" />
+          </svg>
+          <div class="prop-overlay"></div>
+          <div class="prop-tag">Golf View</div>
+          <div class="prop-info">
+            <div class="prop-type">Villa</div>
+            <div class="prop-name">Prestige Greens</div>
+            <div class="prop-city">Whitefield, Bangalore</div>
+            <div class="prop-price">₹ 8.2 Cr <span>/ 5 BHK</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prop-card reveal reveal-d3">
+        <div class="prop-visual">
+          <svg class="prop-svg" viewBox="0 0 400 300" fill="none">
+            <rect width="400" height="300" fill="#0e0c0a" />
+            <rect width="400" height="300" fill="#c17f50" opacity=".03" />
+            <rect x="80" y="100" width="100" height="200" fill="#1c1810" />
+            <rect x="200" y="130" width="120" height="170" fill="#1a1610" />
+            <rect x="50" y="170" width="60" height="130" fill="#181410" />
             <g opacity=".5">
-              <rect x="40" y="145" width="10" height="7" fill="#c9a96e" opacity=".15"/>
-              <rect x="55" y="145" width="10" height="7" fill="#c9a96e" opacity=".25"/>
-              <rect x="70" y="145" width="10" height="7" fill="#c9a96e" opacity=".1"/>
-              <rect x="40" y="160" width="10" height="7" fill="#c9a96e" opacity=".3"/>
-              <rect x="55" y="160" width="10" height="7" fill="#c9a96e" opacity=".1"/>
-              <rect x="110" y="115" width="10" height="7" fill="#c9a96e" opacity=".2"/>
-              <rect x="125" y="115" width="10" height="7" fill="#c9a96e" opacity=".35"/>
-              <rect x="140" y="115" width="10" height="7" fill="#c9a96e" opacity=".15"/>
-              <rect x="155" y="115" width="10" height="7" fill="#c9a96e" opacity=".25"/>
+              <rect x="95" y="115" width="15" height="10" fill="#c9a96e" opacity=".2" />
+              <rect x="120" y="115" width="15" height="10" fill="#c9a96e" opacity=".15" />
+              <rect x="145" y="115" width="15" height="10" fill="#c9a96e" opacity=".3" />
+              <rect x="95" y="135" width="15" height="10" fill="#c9a96e" opacity=".1" />
+              <rect x="120" y="135" width="15" height="10" fill="#c9a96e" opacity=".25" />
+              <rect x="145" y="135" width="15" height="10" fill="#c9a96e" opacity=".15" />
+              <rect x="95" y="155" width="15" height="10" fill="#c9a96e" opacity=".3" />
+              <rect x="120" y="155" width="15" height="10" fill="#c9a96e" opacity=".1" />
+              <rect x="215" y="145" width="15" height="10" fill="#c9a96e" opacity=".2" />
+              <rect x="240" y="145" width="15" height="10" fill="#c9a96e" opacity=".35" />
+              <rect x="265" y="145" width="15" height="10" fill="#c9a96e" opacity=".1" />
+              <rect x="290" y="145" width="15" height="10" fill="#c9a96e" opacity=".25" />
+              <rect x="215" y="165" width="15" height="10" fill="#c9a96e" opacity=".15" />
+              <rect x="240" y="165" width="15" height="10" fill="#c9a96e" opacity=".2" />
             </g>
+            <!-- Dome ornament -->
+            <ellipse cx="130" cy="103" rx="18" ry="12" fill="#221e16" />
+            <!-- Ground -->
+            <rect x="0" y="270" width="400" height="30" fill="#080706" />
           </svg>
-        </div>
-        <div class="city-overlay"></div>
-        <div class="city-arrow">→</div>
-        <div class="city-info">
-          <div class="city-name">Bangalore</div>
-          <div class="city-listings">215 listings</div>
+          <div class="prop-overlay"></div>
+          <div class="prop-tag">Prime</div>
+          <div class="prop-info">
+            <div class="prop-type">Penthouse</div>
+            <div class="prop-name">Kokapet Heights</div>
+            <div class="prop-city">Financial District, Hyderabad</div>
+            <div class="prop-price">₹ 6.8 Cr <span>/ 4 BHK</span></div>
+          </div>
         </div>
       </div>
-
-      <!-- Hyderabad -->
-      <div class="city-card reveal reveal-d3">
-        <div class="city-bg">
-          <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
-            <rect width="220" height="290" fill="#0e0c08"/>
-            <!-- Charminar silhouette -->
-            <rect x="85" y="160" width="50" height="130" fill="#1c1810"/>
-            <!-- Minarets -->
-            <rect x="80" y="130" width="15" height="165" fill="#181410"/>
-            <rect x="125" y="130" width="15" height="165" fill="#181410"/>
-            <rect x="78" y="125" width="19" height="10" fill="#201c16"/>
-            <rect x="123" y="125" width="19" height="10" fill="#201c16"/>
-            <!-- Arches -->
-            <path d="M85 200 Q110 175 135 200" stroke="#c9a96e" stroke-width="1" fill="none" opacity=".15"/>
-   
-            <ellipse cx="110" cy="160" rx="25" ry="10" fill="#1e1a14"/>
-            <ellipse cx="110" cy="158" rx="12" ry="6" fill="#221e16"/>
-         
-            <rect x="103" y="170" width="14" height="20" fill="#c9a96e" opacity=".1"/>
-            
-            <rect x="0" y="150" width="80" height="140" fill="#141210" opacity=".6"/>
-            <rect x="150" y="140" width="70" height="150" fill="#141210" opacity=".6"/>
-            <rect x="0" y="0" width="220" height="150" fill="#0c0a08"/>
-          </svg>
-        </div>
-        <div class="city-overlay"></div>
-        <div class="city-arrow">→</div>
-        <div class="city-info">
-          <div class="city-name">Hyderabad</div>
-          <div class="city-listings">176 listings</div>
-        </div>
-      </div>
-
-      <!-- Pune -->
-      <div class="city-card reveal reveal-d4">
-        <div class="city-bg">
-          <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
-            <rect width="220" height="290" fill="#0c0e0c"/>
-            <!-- Hills backdrop -->
-            <ellipse cx="110" cy="300" rx="160" ry="120" fill="#1a2820" opacity=".3"/>
-            <!-- Modern buildings -->
-            <rect x="20" y="140" width="50" height="150" fill="#151e15"/>
-            <rect x="80" y="100" width="60" height="190" fill="#161e14"/>
-            <rect x="150" y="130" width="55" height="160" fill="#141c12"/>
-            <!-- Glass -->
-            <rect x="85" y="110" width="50" height="100" fill="#7a9e7e" opacity=".04"/>
-            <!-- Windows -->
-            <g opacity=".4">
-              <rect x="88" y="115" width="8" height="6" fill="#c9a96e" opacity=".2"/>
-              <rect x="100" y="115" width="8" height="6" fill="#c9a96e" opacity=".35"/>
-              <rect x="112" y="115" width="8" height="6" fill="#c9a96e" opacity=".15"/>
-              <rect x="124" y="115" width="8" height="6" fill="#c9a96e" opacity=".25"/>
-              <rect x="88" y="130" width="8" height="6" fill="#c9a96e" opacity=".3"/>
-              <rect x="100" y="130" width="8" height="6" fill="#c9a96e" opacity=".1"/>
-            </g>
-            <!-- Foreground trees -->
-            <ellipse cx="15" cy="230" rx="18" ry="28" fill="#1e2e1e" opacity=".6"/>
-            <ellipse cx="205" cy="240" rx="18" ry="25" fill="#1e2e1e" opacity=".5"/>
-          </svg>
-        </div>
-        <div class="city-overlay"></div>
-        <div class="city-arrow">→</div>
-        <div class="city-info">
-          <div class="city-name">Pune</div>
-          <div class="city-listings">134 listings</div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════════════════════════════════
+  <!-- ══════════════════════════════════════════
+     S4 — MARKET INSIGHT
+══════════════════════════════════════════ -->
+  <section class="market" id="about">
+    <div class="market-inner">
+      <!-- Visual -->
+      <div class="market-visual reveal">
+        <div class="market-ring-wrap">
+          <div class="market-ring"></div>
+          <div class="market-ring2"></div>
+          <div class="market-center">
+            <div class="market-big">₹65<sup>L Cr</sup></div>
+            <div class="market-big-label">India Real Estate Market 2024</div>
+          </div>
+        </div>
+      </div>
+      <!-- Points -->
+      <div class="market-points">
+        <div class="section-label reveal">Why India Now</div>
+        <h2 class="section-title reveal" style="margin-bottom:2.5rem;">The world's
+          most<br><em>compelling</em><br>property market.</h2>
+        <div class="market-point reveal reveal-d1">
+          <div class="mp-num">01</div>
+          <div class="mp-title">Fastest Growing Economy</div>
+          <div class="mp-desc">India's GDP growth at 7.6% makes it the world's fastest-growing major economy, with real
+            estate prices appreciating 12–18% YoY in prime corridors.</div>
+        </div>
+        <div class="market-point reveal reveal-d2">
+          <div class="mp-num">02</div>
+          <div class="mp-title">NRI Investment Boom</div>
+          <div class="mp-desc">$13.1 billion in NRI real estate investments in FY24, driven by favorable FEMA
+            regulations and the rupee's long-term strengthening trajectory.</div>
+        </div>
+        <div class="market-point reveal reveal-d3">
+          <div class="mp-num">03</div>
+          <div class="mp-title">Smart Cities Infrastructure</div>
+          <div class="mp-desc">₹2.05 lakh crore allocated under PM Gati Shakti, transforming tier-2 cities into premium
+            investment destinations with world-class connectivity.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     S5 — CITIES
+══════════════════════════════════════════ -->
+  <section class="cities" id="cities">
+    <div class="cities-inner">
+      <div class="section-header reveal">
+        <div class="section-title-block">
+          <div class="section-label">Our Markets</div>
+          <h2 class="section-title">Prime <em>cities</em>,<br>curated listings.</h2>
+        </div>
+        <a href="#" class="section-link">All cities →</a>
+      </div>
+      <div class="cities-grid">
+
+        <!-- Mumbai -->
+        <div class="city-card reveal">
+          <div class="city-bg">
+            <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
+              <rect width="220" height="290" fill="#0f0d0b" />
+              <rect width="220" height="290" fill="#c17f50" opacity=".04" />
+              <!-- Sea line -->
+              <rect x="0" y="200" width="220" height="90" fill="#0c0e10" opacity=".5" />
+              <rect x="0" y="195" width="220" height="8" fill="#7a9e9e" opacity=".08" />
+              <!-- Buildings skyline -->
+              <rect x="10" y="120" width="30" height="180" fill="#1a1612" />
+              <rect x="15" y="100" width="20" height="25" fill="#1e1a14" />
+              <rect x="50" y="80" width="40" height="220" fill="#1c1810" />
+              <rect x="60" y="60" width="20" height="25" fill="#221e16" />
+              <rect x="100" y="100" width="35" height="200" fill="#181410" />
+              <rect x="140" y="70" width="45" height="230" fill="#1c1a12" />
+              <rect x="153" y="50" width="20" height="25" fill="#201c16" />
+              <rect x="190" y="110" width="30" height="180" fill="#181410" />
+              <!-- Windows -->
+              <rect x="55" y="90" width="6" height="4" fill="#c9a96e" opacity=".3" />
+              <rect x="65" y="90" width="6" height="4" fill="#c9a96e" opacity=".15" />
+              <rect x="55" y="100" width="6" height="4" fill="#c9a96e" opacity=".2" />
+              <rect x="65" y="100" width="6" height="4" fill="#c9a96e" opacity=".35" />
+              <rect x="145" y="80" width="6" height="4" fill="#c9a96e" opacity=".25" />
+              <rect x="155" y="80" width="6" height="4" fill="#c9a96e" opacity=".1" />
+              <rect x="165" y="80" width="6" height="4" fill="#c9a96e" opacity=".3" />
+            </svg>
+          </div>
+          <div class="city-overlay"></div>
+          <div class="city-arrow">→</div>
+          <div class="city-info">
+            <div class="city-name">Mumbai</div>
+            <div class="city-listings">142 listings</div>
+          </div>
+        </div>
+
+        <!-- Delhi -->
+        <div class="city-card reveal reveal-d1">
+          <div class="city-bg">
+            <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
+              <rect width="220" height="290" fill="#0d0c0a" />
+              <!-- India Gate silhouette -->
+              <rect x="85" y="170" width="50" height="120" fill="#181410" />
+              <rect x="80" y="155" width="60" height="20" fill="#1e1a14" />
+              <rect x="95" y="120" width="30" height="40" fill="#1a1610" />
+              <ellipse cx="110" cy="120" rx="15" ry="5" fill="#221e16" />
+              <rect x="107" y="90" width="6" height="35" fill="#201c16" />
+              <circle cx="110" cy="88" r="4" fill="#c9a96e" opacity=".3" />
+              <!-- Wings -->
+              <rect x="50" y="168" width="40" height="8" fill="#1c1810" />
+              <rect x="130" y="168" width="40" height="8" fill="#1c1810" />
+              <!-- Buildings bg -->
+              <rect x="0" y="130" width="50" height="160" fill="#151210" opacity=".7" />
+              <rect x="180" y="120" width="40" height="170" fill="#151210" opacity=".7" />
+              <!-- Haze -->
+              <rect x="0" y="0" width="220" height="130" fill="#100e0c" />
+              <rect x="0" y="80" width="220" height="60" fill="#c9a96e" opacity=".015" />
+            </svg>
+          </div>
+          <div class="city-overlay"></div>
+          <div class="city-arrow">→</div>
+          <div class="city-info">
+            <div class="city-name">New Delhi</div>
+            <div class="city-listings">98 listings</div>
+          </div>
+        </div>
+
+        <!-- Bangalore -->
+        <div class="city-card reveal reveal-d2">
+          <div class="city-bg">
+            <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
+              <rect width="220" height="290" fill="#0c0f0c" />
+              <!-- Green hills bg -->
+              <ellipse cx="50" cy="250" rx="80" ry="60" fill="#1a2a1a" opacity=".4" />
+              <ellipse cx="180" cy="260" rx="80" ry="50" fill="#1a2a1a" opacity=".3" />
+              <!-- Tech park buildings -->
+              <rect x="30" y="130" width="60" height="160" fill="#141e14" />
+              <rect x="100" y="100" width="70" height="190" fill="#161e14" />
+              <rect x="180" y="150" width="40" height="140" fill="#141c12" />
+              <!-- Glass facades -->
+              <rect x="35" y="140" width="50" height="100" fill="#7a9e7e" opacity=".04" />
+              <rect x="105" y="110" width="60" height="120" fill="#7a9e7e" opacity=".05" />
+              <!-- Windows grid -->
+              <g opacity=".5">
+                <rect x="40" y="145" width="10" height="7" fill="#c9a96e" opacity=".15" />
+                <rect x="55" y="145" width="10" height="7" fill="#c9a96e" opacity=".25" />
+                <rect x="70" y="145" width="10" height="7" fill="#c9a96e" opacity=".1" />
+                <rect x="40" y="160" width="10" height="7" fill="#c9a96e" opacity=".3" />
+                <rect x="55" y="160" width="10" height="7" fill="#c9a96e" opacity=".1" />
+                <rect x="110" y="115" width="10" height="7" fill="#c9a96e" opacity=".2" />
+                <rect x="125" y="115" width="10" height="7" fill="#c9a96e" opacity=".35" />
+                <rect x="140" y="115" width="10" height="7" fill="#c9a96e" opacity=".15" />
+                <rect x="155" y="115" width="10" height="7" fill="#c9a96e" opacity=".25" />
+              </g>
+            </svg>
+          </div>
+          <div class="city-overlay"></div>
+          <div class="city-arrow">→</div>
+          <div class="city-info">
+            <div class="city-name">Bangalore</div>
+            <div class="city-listings">215 listings</div>
+          </div>
+        </div>
+
+        <!-- Hyderabad -->
+        <div class="city-card reveal reveal-d3">
+          <div class="city-bg">
+            <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
+              <rect width="220" height="290" fill="#0e0c08" />
+              <!-- Charminar silhouette -->
+              <rect x="85" y="160" width="50" height="130" fill="#1c1810" />
+              <!-- Minarets -->
+              <rect x="80" y="130" width="15" height="165" fill="#181410" />
+              <rect x="125" y="130" width="15" height="165" fill="#181410" />
+              <rect x="78" y="125" width="19" height="10" fill="#201c16" />
+              <rect x="123" y="125" width="19" height="10" fill="#201c16" />
+              <!-- Arches -->
+              <path d="M85 200 Q110 175 135 200" stroke="#c9a96e" stroke-width="1" fill="none" opacity=".15" />
+
+              <ellipse cx="110" cy="160" rx="25" ry="10" fill="#1e1a14" />
+              <ellipse cx="110" cy="158" rx="12" ry="6" fill="#221e16" />
+
+              <rect x="103" y="170" width="14" height="20" fill="#c9a96e" opacity=".1" />
+
+              <rect x="0" y="150" width="80" height="140" fill="#141210" opacity=".6" />
+              <rect x="150" y="140" width="70" height="150" fill="#141210" opacity=".6" />
+              <rect x="0" y="0" width="220" height="150" fill="#0c0a08" />
+            </svg>
+          </div>
+          <div class="city-overlay"></div>
+          <div class="city-arrow">→</div>
+          <div class="city-info">
+            <div class="city-name">Hyderabad</div>
+            <div class="city-listings">176 listings</div>
+          </div>
+        </div>
+
+        <!-- Pune -->
+        <div class="city-card reveal reveal-d4">
+          <div class="city-bg">
+            <svg width="100%" height="100%" viewBox="0 0 220 290" fill="none">
+              <rect width="220" height="290" fill="#0c0e0c" />
+              <!-- Hills backdrop -->
+              <ellipse cx="110" cy="300" rx="160" ry="120" fill="#1a2820" opacity=".3" />
+              <!-- Modern buildings -->
+              <rect x="20" y="140" width="50" height="150" fill="#151e15" />
+              <rect x="80" y="100" width="60" height="190" fill="#161e14" />
+              <rect x="150" y="130" width="55" height="160" fill="#141c12" />
+              <!-- Glass -->
+              <rect x="85" y="110" width="50" height="100" fill="#7a9e7e" opacity=".04" />
+              <!-- Windows -->
+              <g opacity=".4">
+                <rect x="88" y="115" width="8" height="6" fill="#c9a96e" opacity=".2" />
+                <rect x="100" y="115" width="8" height="6" fill="#c9a96e" opacity=".35" />
+                <rect x="112" y="115" width="8" height="6" fill="#c9a96e" opacity=".15" />
+                <rect x="124" y="115" width="8" height="6" fill="#c9a96e" opacity=".25" />
+                <rect x="88" y="130" width="8" height="6" fill="#c9a96e" opacity=".3" />
+                <rect x="100" y="130" width="8" height="6" fill="#c9a96e" opacity=".1" />
+              </g>
+              <!-- Foreground trees -->
+              <ellipse cx="15" cy="230" rx="18" ry="28" fill="#1e2e1e" opacity=".6" />
+              <ellipse cx="205" cy="240" rx="18" ry="25" fill="#1e2e1e" opacity=".5" />
+            </svg>
+          </div>
+          <div class="city-overlay"></div>
+          <div class="city-arrow">→</div>
+          <div class="city-info">
+            <div class="city-name">Pune</div>
+            <div class="city-listings">134 listings</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
      S6 — PROCESS / SERVICES
 ══════════════════════════════════════════ -->
-<section class="process" id="process">
-  <div class="process-inner">
-    <div class="process-header">
-      <div class="section-label reveal">How We Work</div>
-      <h2 class="section-title reveal" style="margin-bottom:.5rem">A seamless journey<br>from <em>search</em> to <em>sanctuary</em>.</h2>
+  <section class="process" id="process">
+    <div class="process-inner">
+      <div class="process-header">
+        <div class="section-label reveal">How We Work</div>
+        <h2 class="section-title reveal" style="margin-bottom:.5rem">A seamless journey<br>from <em>search</em> to
+          <em>sanctuary</em>.</h2>
+      </div>
+      <div class="process-steps">
+        <div class="p-step reveal">
+          <div class="step-n">01</div>
+          <svg class="step-ico" viewBox="0 0 48 48" fill="none">
+            <circle cx="20" cy="20" r="12" stroke="#c17f50" stroke-width="1" />
+            <line x1="29" y1="29" x2="42" y2="42" stroke="#c17f50" stroke-width="1" />
+            <circle cx="20" cy="20" r="4" fill="#c17f50" opacity=".2" />
+          </svg>
+          <div class="step-t">Discovery</div>
+          <div class="step-d">A dedicated advisor learns your lifestyle, aspirations, and investment horizon before
+            presenting a single property.</div>
+        </div>
+        <div class="p-step reveal reveal-d1">
+          <div class="step-n">02</div>
+          <svg class="step-ico" viewBox="0 0 48 48" fill="none">
+            <rect x="8" y="8" width="32" height="32" stroke="#c17f50" stroke-width="1" />
+            <rect x="14" y="14" width="8" height="8" fill="#c17f50" opacity=".15" />
+            <rect x="26" y="14" width="8" height="8" fill="#c17f50" opacity=".1" />
+            <rect x="14" y="26" width="8" height="8" fill="#c17f50" opacity=".1" />
+            <rect x="26" y="26" width="8" height="8" fill="#c17f50" opacity=".2" />
+          </svg>
+          <div class="step-t">Curation</div>
+          <div class="step-d">We shortlist properties from our exclusive inventory — many of which never reach the open
+            market — matched precisely to your criteria.</div>
+        </div>
+        <div class="p-step reveal reveal-d2">
+          <div class="step-n">03</div>
+          <svg class="step-ico" viewBox="0 0 48 48" fill="none">
+            <path d="M8 36 L24 12 L40 36" stroke="#c17f50" stroke-width="1" fill="none" />
+            <line x1="8" y1="36" x2="40" y2="36" stroke="#c17f50" stroke-width="1" />
+            <circle cx="24" cy="24" r="3" fill="#c17f50" opacity=".3" />
+          </svg>
+          <div class="step-t">Due Diligence</div>
+          <div class="step-d">Comprehensive legal verification, RERA compliance checks, and financial structuring —
+            handled by our in-house experts.</div>
+        </div>
+        <div class="p-step reveal reveal-d3">
+          <div class="step-n">04</div>
+          <svg class="step-ico" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="16" stroke="#c17f50" stroke-width="1" />
+            <path d="M16 24 L21 29 L32 18" stroke="#c17f50" stroke-width="1.5" fill="none" stroke-linecap="round" />
+          </svg>
+          <div class="step-t">Handover</div>
+          <div class="step-d">White-glove coordination of registrations, interior connections, and post-purchase support
+            — well beyond the transaction.</div>
+        </div>
+      </div>
     </div>
-    <div class="process-steps">
-      <div class="p-step reveal">
-        <div class="step-n">01</div>
-        <svg class="step-ico" viewBox="0 0 48 48" fill="none">
-          <circle cx="20" cy="20" r="12" stroke="#c17f50" stroke-width="1"/>
-          <line x1="29" y1="29" x2="42" y2="42" stroke="#c17f50" stroke-width="1"/>
-          <circle cx="20" cy="20" r="4" fill="#c17f50" opacity=".2"/>
-        </svg>
-        <div class="step-t">Discovery</div>
-        <div class="step-d">A dedicated advisor learns your lifestyle, aspirations, and investment horizon before presenting a single property.</div>
-      </div>
-      <div class="p-step reveal reveal-d1">
-        <div class="step-n">02</div>
-        <svg class="step-ico" viewBox="0 0 48 48" fill="none">
-          <rect x="8" y="8" width="32" height="32" stroke="#c17f50" stroke-width="1"/>
-          <rect x="14" y="14" width="8" height="8" fill="#c17f50" opacity=".15"/>
-          <rect x="26" y="14" width="8" height="8" fill="#c17f50" opacity=".1"/>
-          <rect x="14" y="26" width="8" height="8" fill="#c17f50" opacity=".1"/>
-          <rect x="26" y="26" width="8" height="8" fill="#c17f50" opacity=".2"/>
-        </svg>
-        <div class="step-t">Curation</div>
-        <div class="step-d">We shortlist properties from our exclusive inventory — many of which never reach the open market — matched precisely to your criteria.</div>
-      </div>
-      <div class="p-step reveal reveal-d2">
-        <div class="step-n">03</div>
-        <svg class="step-ico" viewBox="0 0 48 48" fill="none">
-          <path d="M8 36 L24 12 L40 36" stroke="#c17f50" stroke-width="1" fill="none"/>
-          <line x1="8" y1="36" x2="40" y2="36" stroke="#c17f50" stroke-width="1"/>
-          <circle cx="24" cy="24" r="3" fill="#c17f50" opacity=".3"/>
-        </svg>
-        <div class="step-t">Due Diligence</div>
-        <div class="step-d">Comprehensive legal verification, RERA compliance checks, and financial structuring — handled by our in-house experts.</div>
-      </div>
-      <div class="p-step reveal reveal-d3">
-        <div class="step-n">04</div>
-        <svg class="step-ico" viewBox="0 0 48 48" fill="none">
-          <circle cx="24" cy="24" r="16" stroke="#c17f50" stroke-width="1"/>
-          <path d="M16 24 L21 29 L32 18" stroke="#c17f50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        </svg>
-        <div class="step-t">Handover</div>
-        <div class="step-d">White-glove coordination of registrations, interior connections, and post-purchase support — well beyond the transaction.</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════════════════════════════════
+  <!-- ══════════════════════════════════════════
      S7 — TESTIMONIALS
 ══════════════════════════════════════════ -->
-<section class="testimonials">
-  <div class="testi-inner">
-    <div class="testi-header">
-      <div class="section-label reveal">Client Stories</div>
-      <h2 class="section-title reveal">Trusted by India's<br><em>discerning</em> few.</h2>
+  <section class="testimonials">
+    <div class="testi-inner">
+      <div class="testi-header">
+        <div class="section-label reveal">Client Stories</div>
+        <h2 class="section-title reveal">Trusted by India's<br><em>discerning</em> few.</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card featured-t reveal">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">Vastu Prestige found us a Worli penthouse we didn't even know existed. The discretion,
+            the speed, the access — genuinely unmatched in India's luxury segment.</p>
+          <div class="testi-divider"></div>
+          <div class="testi-person">
+            <div class="testi-avatar">RK</div>
+            <div>
+              <div class="testi-name">Rajiv Khanna</div>
+              <div class="testi-role">Managing Director · HDFC Ventures</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-d1">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">As an NRI investing from London, I was nervous about the process. Their team made it
+            seamless — legal clarity, transparent pricing, and a beautiful property in Bangalore's finest corridor.</p>
+          <div class="testi-divider"></div>
+          <div class="testi-person">
+            <div class="testi-avatar">PS</div>
+            <div>
+              <div class="testi-name">Priya Sharma</div>
+              <div class="testi-role">Consultant · McKinsey & Co. London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-d2">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">Three generations of our family have bought through Vastu Prestige. The level of
+            relationship, the institutional knowledge of Delhi's best addresses — it's irreplaceable.</p>
+          <div class="testi-divider"></div>
+          <div class="testi-person">
+            <div class="testi-avatar">AM</div>
+            <div>
+              <div class="testi-name">Arjun Mehrotra</div>
+              <div class="testi-role">Partner · Mehrotra Industries</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card featured-t reveal">
-        <div class="testi-stars">★ ★ ★ ★ ★</div>
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">Vastu Prestige found us a Worli penthouse we didn't even know existed. The discretion, the speed, the access — genuinely unmatched in India's luxury segment.</p>
-        <div class="testi-divider"></div>
-        <div class="testi-person">
-          <div class="testi-avatar">RK</div>
-          <div>
-            <div class="testi-name">Rajiv Khanna</div>
-            <div class="testi-role">Managing Director · HDFC Ventures</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card reveal reveal-d1">
-        <div class="testi-stars">★ ★ ★ ★ ★</div>
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">As an NRI investing from London, I was nervous about the process. Their team made it seamless — legal clarity, transparent pricing, and a beautiful property in Bangalore's finest corridor.</p>
-        <div class="testi-divider"></div>
-        <div class="testi-person">
-          <div class="testi-avatar">PS</div>
-          <div>
-            <div class="testi-name">Priya Sharma</div>
-            <div class="testi-role">Consultant · McKinsey & Co. London</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card reveal reveal-d2">
-        <div class="testi-stars">★ ★ ★ ★ ★</div>
-        <div class="testi-quote-mark">"</div>
-        <p class="testi-text">Three generations of our family have bought through Vastu Prestige. The level of relationship, the institutional knowledge of Delhi's best addresses — it's irreplaceable.</p>
-        <div class="testi-divider"></div>
-        <div class="testi-person">
-          <div class="testi-avatar">AM</div>
-          <div>
-            <div class="testi-name">Arjun Mehrotra</div>
-            <div class="testi-role">Partner · Mehrotra Industries</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════════════════════════════════
+  <!-- ══════════════════════════════════════════
      S8 — CONTACT / ENQUIRY
 ══════════════════════════════════════════ -->
-<section class="contact" id="contact">
-  <div class="contact-inner">
-    <div class="contact-left reveal">
-      <div class="section-label">Get in Touch</div>
-      <h2 class="contact-title">Begin your<br><em>search</em><br>today.</h2>
-      <p class="contact-desc">Our advisors are available six days a week for private consultations — in person, by phone, or virtually.</p>
-      <div class="contact-details">
-        <div class="cd-item">
-          <div class="cd-icon">✆</div>
-          +91 22 4896 7000 &nbsp;·&nbsp; +91 98765 43210
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="contact-title">Begin your<br><em>search</em><br>today.</h2>
+        <p class="contact-desc">Our advisors are available six days a week for private consultations — in person, by
+          phone, or virtually.</p>
+        <div class="contact-details">
+          <div class="cd-item">
+            <div class="cd-icon">✆</div>
+            +91 22 4896 7000 &nbsp;·&nbsp; +91 98765 43210
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">@</div>
+            advisor@vastuprestige.in
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">◈</div>
+            14, Maker Chambers V, Nariman Point, Mumbai — 400 021
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">◷</div>
+            Mon – Sat &nbsp;·&nbsp; 9 AM – 7 PM IST
+          </div>
         </div>
-        <div class="cd-item">
-          <div class="cd-icon">@</div>
-          advisor@vastuprestige.in
+      </div>
+      <div class="contact-form reveal reveal-d2">
+        <div class="form-row">
+          <div class="f-group">
+            <input type="text" placeholder=" " id="fname">
+            <label for="fname">Full Name</label>
+          </div>
+          <div class="f-group">
+            <input type="tel" placeholder=" " id="phone">
+            <label for="phone">Phone Number</label>
+          </div>
         </div>
-        <div class="cd-item">
-          <div class="cd-icon">◈</div>
-          14, Maker Chambers V, Nariman Point, Mumbai — 400 021
+        <div class="f-group">
+          <input type="email" placeholder=" " id="email">
+          <label for="email">Email Address</label>
         </div>
-        <div class="cd-item">
-          <div class="cd-icon">◷</div>
-          Mon – Sat &nbsp;·&nbsp; 9 AM – 7 PM IST
+        <div class="form-row">
+          <div class="f-group">
+            <select id="city">
+              <option value="" disabled selected></option>
+              <option>Mumbai</option>
+              <option>Delhi NCR</option>
+              <option>Bangalore</option>
+              <option>Hyderabad</option>
+              <option>Pune</option>
+              <option>Chennai</option>
+              <option>Other</option>
+            </select>
+            <label for="city">Preferred City</label>
+          </div>
+          <div class="f-group">
+            <select id="budget">
+              <option value="" disabled selected></option>
+              <option>₹ 2 – 5 Crore</option>
+              <option>₹ 5 – 10 Crore</option>
+              <option>₹ 10 – 25 Crore</option>
+              <option>₹ 25 Crore+</option>
+            </select>
+            <label for="budget">Budget Range</label>
+          </div>
         </div>
+        <div class="f-group">
+          <textarea placeholder=" " id="msg"></textarea>
+          <label for="msg">Tell us about your ideal property</label>
+        </div>
+        <button class="f-submit">
+          <span>Request Private Consultation</span>
+          <span>→</span>
+        </button>
       </div>
     </div>
-    <div class="contact-form reveal reveal-d2">
-      <div class="form-row">
-        <div class="f-group">
-          <input type="text" placeholder=" " id="fname">
-          <label for="fname">Full Name</label>
-        </div>
-        <div class="f-group">
-          <input type="tel" placeholder=" " id="phone">
-          <label for="phone">Phone Number</label>
-        </div>
-      </div>
-      <div class="f-group">
-        <input type="email" placeholder=" " id="email">
-        <label for="email">Email Address</label>
-      </div>
-      <div class="form-row">
-        <div class="f-group">
-          <select id="city">
-            <option value="" disabled selected></option>
-            <option>Mumbai</option>
-            <option>Delhi NCR</option>
-            <option>Bangalore</option>
-            <option>Hyderabad</option>
-            <option>Pune</option>
-            <option>Chennai</option>
-            <option>Other</option>
-          </select>
-          <label for="city">Preferred City</label>
-        </div>
-        <div class="f-group">
-          <select id="budget">
-            <option value="" disabled selected></option>
-            <option>₹ 2 – 5 Crore</option>
-            <option>₹ 5 – 10 Crore</option>
-            <option>₹ 10 – 25 Crore</option>
-            <option>₹ 25 Crore+</option>
-          </select>
-          <label for="budget">Budget Range</label>
-        </div>
-      </div>
-      <div class="f-group">
-        <textarea placeholder=" " id="msg"></textarea>
-        <label for="msg">Tell us about your ideal property</label>
-      </div>
-      <button class="f-submit">
-        <span>Request Private Consultation</span>
-        <span>→</span>
-      </button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════════════════════════════════
+  <!-- ══════════════════════════════════════════
      S9 — FOOTER
 ══════════════════════════════════════════ -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand reveal">
-      <span class="footer-logo">Vastu <span>Prestige</span></span>
-      <p class="footer-tagline">India's most trusted name in luxury real estate — curating extraordinary addresses since 2009.</p>
-      <div class="footer-social">
-        <a href="#" class="soc">in</a>
-        <a href="#" class="soc">tw</a>
-        <a href="#" class="soc">ig</a>
-        <a href="#" class="soc">yt</a>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand reveal">
+        <span class="footer-logo">Vastu <span>Prestige</span></span>
+        <p class="footer-tagline">India's most trusted name in luxury real estate — curating extraordinary addresses
+          since 2009.</p>
+        <div class="footer-social">
+          <a href="#" class="soc">in</a>
+          <a href="#" class="soc">tw</a>
+          <a href="#" class="soc">ig</a>
+          <a href="#" class="soc">yt</a>
+        </div>
+      </div>
+      <div class="footer-col reveal reveal-d1">
+        <h5>Properties</h5>
+        <ul>
+          <li><a href="#">Luxury Villas</a></li>
+          <li><a href="#">Sea-Facing Homes</a></li>
+          <li><a href="#">Penthouses</a></li>
+          <li><a href="#">Heritage Bungalows</a></li>
+          <li><a href="#">Golf Residences</a></li>
+          <li><a href="#">NRI Investments</a></li>
+        </ul>
+      </div>
+      <div class="footer-col reveal reveal-d2">
+        <h5>Cities</h5>
+        <ul>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">New Delhi</a></li>
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Pune</a></li>
+          <li><a href="#">Chennai</a></li>
+        </ul>
+      </div>
+      <div class="footer-col reveal reveal-d3">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Press & Media</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">RERA Compliance</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-col reveal reveal-d1">
-      <h5>Properties</h5>
-      <ul>
-        <li><a href="#">Luxury Villas</a></li>
-        <li><a href="#">Sea-Facing Homes</a></li>
-        <li><a href="#">Penthouses</a></li>
-        <li><a href="#">Heritage Bungalows</a></li>
-        <li><a href="#">Golf Residences</a></li>
-        <li><a href="#">NRI Investments</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2024 Vastu Prestige Realty Pvt. Ltd. All rights reserved.</div>
+      <div class="footer-rera">RERA Reg. No. <span>MH/MUM/BEFORE51/2020</span> · MahaRERA registered broker</div>
     </div>
-    <div class="footer-col reveal reveal-d2">
-      <h5>Cities</h5>
-      <ul>
-        <li><a href="#">Mumbai</a></li>
-        <li><a href="#">New Delhi</a></li>
-        <li><a href="#">Bangalore</a></li>
-        <li><a href="#">Hyderabad</a></li>
-        <li><a href="#">Pune</a></li>
-        <li><a href="#">Chennai</a></li>
-      </ul>
-    </div>
-    <div class="footer-col reveal reveal-d3">
-      <h5>Company</h5>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Press & Media</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">RERA Compliance</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2024 Vastu Prestige Realty Pvt. Ltd. All rights reserved.</div>
-    <div class="footer-rera">RERA Reg. No. <span>MH/MUM/BEFORE51/2020</span> · MahaRERA registered broker</div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-/* ── CURSOR ── */
-const cur = document.getElementById('cur');
-const ring = document.getElementById('curRing');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cur.style.left = mx+'px'; cur.style.top = my+'px';
-});
-(function animRing(){
-  rx += (mx-rx)*.1; ry += (my-ry)*.1;
-  ring.style.left = rx+'px'; ring.style.top = ry+'px';
-  requestAnimationFrame(animRing);
-})();
-document.querySelectorAll('a,button,.prop-card,.city-card,.p-step,.market-point,.testi-card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{ ring.style.width='56px'; ring.style.height='56px'; ring.style.borderColor='rgba(193,127,80,.6)'; });
-  el.addEventListener('mouseleave',()=>{ ring.style.width='34px'; ring.style.height='34px'; ring.style.borderColor='rgba(193,127,80,.35)'; });
-});
+  <script>
+    /* ── CURSOR ── */
+    const cur = document.getElementById('cur');
+    const ring = document.getElementById('curRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+    });
+    (function animRing() {
+      rx += (mx - rx) * .1; ry += (my - ry) * .1;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+    document.querySelectorAll('a,button,.prop-card,.city-card,.p-step,.market-point,.testi-card').forEach(el => {
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(193,127,80,.6)'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '34px'; ring.style.height = '34px'; ring.style.borderColor = 'rgba(193,127,80,.35)'; });
+    });
 
-/* ── NAV SCROLL ── */
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', ()=>{
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-});
+    /* ── NAV SCROLL ── */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
 
-/* ── SCROLL REVEAL ── */
-const reveals = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
-},{threshold:.1});
-reveals.forEach(el=>io.observe(el));
+    /* ── SCROLL REVEAL ── */
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: .1 });
+    reveals.forEach(el => io.observe(el));
 
-/* ── LABEL FLOAT ── */
-document.querySelectorAll('.f-group select').forEach(sel=>{
-  sel.addEventListener('change',function(){
-    this.classList.toggle('has-val', this.value !== '');
-  });
-});
+    /* ── LABEL FLOAT ── */
+    document.querySelectorAll('.f-group select').forEach(sel => {
+      sel.addEventListener('change', function () {
+        this.classList.toggle('has-val', this.value !== '');
+      });
+    });
 
-fetch("../navbar.html")
-.then(response => response.text())
-.then(data => {
-document.getElementById("nav").innerHTML = data;
-});
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
 
-</script>
+  </script>
 </body>
+
 </html>

@@ -224,8 +224,8 @@ nav.scrolled {
 
 .nav-cta {
     padding: .65rem 1.7rem;
-    background: linear-gradient(135deg, var(--v), #8b6fff);
-    color: #fff;
+    background: linear-gradient(135deg, var(--v2), #8b6fff);
+    color: #181818;
     font-family: var(--mono);
     font-size: var(--fs-xs);
     letter-spacing: .10em;
@@ -235,6 +235,7 @@ nav.scrolled {
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
     transition: box-shadow .3s, transform .2s;
     box-shadow: 0 0 0 0 var(--vglow);
+    border: 1px solid #181818;
 }
 
 .nav-cta:hover {

@@ -8,16 +8,16 @@
   --card:      #1c1a15;
   --border:    #2a2620;
   --muted:     #3a3530;
-  --terracotta:#c17f50;
-  --terra-dim: #926848;
-  --terra-pale:#e8c9a8;
-  --terra-glow:rgba(193,127,80,0.08);
+  --terracotta:#e1bb4a;
+  --terra-dim: #928248;
+  --terra-pale:#e8dba8;
+  --terra-glow:rgba(193, 184, 80, 0.08);
   --sage:      #7a9e7e;
   --sage-dim:  rgba(122,158,126,0.15);
   --cream:     #f2ede5;
-  --text-dim:  #a29d93;
-  --text-mid:  #d1c8ba;
-  --text-light:#ebe5dc;
+  --text-dim:  #c3c3a2;
+  --text-mid:  #d1ceba;
+  --text-light:#ebe9dc;
   --text-bright:#ffffff;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --mono:  'DM Mono', monospace;
@@ -72,7 +72,7 @@ nav.scrolled {
   font-size:.6rem;
   letter-spacing:.25em;
   text-transform:uppercase;
-  color:var(--text-mid);
+  color:var(--text-bright);
   text-decoration:none;
   transition:color .3s;
 }
