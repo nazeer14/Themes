@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumina Dental — Premium Dental Care, Hyderabad</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #ffffff;
+    --cream: #F3EFE6;
+    --sand: #E8E0D0;
+    --gold: #C9A96E;
+    --gold-light: #E2C99A;
+    --gold-pale: #F7F0E3;
+    --sage: #8A9E8C;
+    --sage-light: #D4DFD5;
+    --charcoal: #2A2825;
+    --warm-gray: #7A7268;
+    --blush: #F2E8E4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 60px;
+    background: rgba(250,248,244,0.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+    animation: fadeDown 0.8s ease both;
+  }
+  @keyframes fadeDown { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:translateY(0); } }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--charcoal);
+  }
+  .nav-logo span { color: var(--gold); }
+
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    transition: color 0.25s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--charcoal);
+    color: var(--ivory) !important;
+    padding: 10px 24px;
+    border-radius: 2px;
+    letter-spacing: 0.1em !important;
+    transition: background 0.25s !important;
+  }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--charcoal) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 120px 60px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-circle {
+    position: absolute;
+    right: -120px; top: 50%;
+    transform: translateY(-50%);
+    width: 680px; height: 680px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--gold-pale) 0%, var(--cream) 60%, transparent 100%);
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative; z-index: 2;
+    animation: fadeUp 1s 0.3s ease both;
+  }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold-pale);
+    border: 1px solid var(--gold-light);
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 36px;
+    font-weight: 500;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: var(--charcoal);
+    margin-bottom: 28px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--warm-gray);
+    line-height: 1.75;
+    max-width: 440px;
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+
+  .hero-actions { display: flex; gap: 16px; align-items: center; }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--charcoal);
+    border: none;
+    padding: 16px 36px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--charcoal); color: var(--ivory); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--charcoal);
+    border: 1px solid var(--sand);
+    padding: 15px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-visual {
+    position: relative; z-index: 2;
+    display: flex; justify-content: center; align-items: center;
+    animation: fadeUp 1s 0.55s ease both;
+  }
+
+  .hero-card-main {
+    width: 380px; height: 480px;
+    background: linear-gradient(145deg, #fff 0%, var(--gold-light) 100%);
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(42,40,37,0.12), 0 8px 24px rgba(201,169,110,0.1);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(201,169,110,0.2);
+  }
+
+  .hero-card-main::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%);
+  }
+
+  .tooth-icon {
+    font-size: 6rem;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 4px 12px rgba(201,169,110,0.3));
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+  .card-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+  .card-sub {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+
+  /* Floating stat cards */
+  .stat-card {
+    position: absolute;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 12px 40px rgba(42,40,37,0.1);
+    border: 1px solid var(--sand);
+  }
+  .stat-card-1 { top: 40px; right: -70px; }
+  .stat-card-2 { bottom: 80px; left: -80px; animation-delay: 0.5s; }
+
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-label { font-size: 0.72rem; color: var(--warm-gray); letter-spacing: 0.08em; margin-top: 4px; }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    background: var(--charcoal);
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+  }
+  .stat-item { text-align: center; }
+  .stat-item .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-item .txt {
+    font-size: 0.78rem;
+    color: rgba(250,248,244,0.55);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* ── SERVICES ── */
+  .services {
+    padding: 120px 60px;
+    background: var(--ivory);
+  }
+
+  .section-tag {
+    font-size: 0.82rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-tag::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--charcoal);
+    max-width: 500px;
+    margin-bottom: 64px;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    background: #fff;
+    border: 1px solid var(--sand);
+    border-radius: 16px;
+    padding: 40px 36px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(42,40,37,0.1); border-color: var(--gold-light); }
+  .service-card:hover::after { transform: scaleX(1); }
+
+  .service-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .service-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  .service-desc {
+    font-size: 0.875rem;
+    color: var(--warm-gray);
+    line-height: 1.7;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+  .service-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 500;
+    transition: gap 0.3s;
+  }
+  .service-card:hover .service-link { gap: 14px; }
+
+  /* ── WHY US ── */
+  .why {
+    padding: 120px 60px;
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .why-visual {
+    position: relative;
+  }
+
+  .why-card-big {
+    background: linear-gradient(135deg, #fff 0%, var(--gold-pale) 100%);
+    border-radius: 20px;
+    padding: 56px 48px;
+    border: 1px solid rgba(201,169,110,0.25);
+    box-shadow: 0 20px 60px rgba(42,40,37,0.08);
+  }
+
+  .why-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+
+  .why-author {
+    display: flex; align-items: center; gap: 14px;
+  }
+  .author-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--sage-light), var(--sage));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+  }
+  .author-name { font-size: 0.88rem; font-weight: 500; color: var(--charcoal); }
+  .author-role { font-size: 0.75rem; color: var(--warm-gray); margin-top: 2px; }
+
+  .why-float {
+    position: absolute;
+    right: -30px; bottom: -30px;
+    background: var(--charcoal);
+    color: var(--ivory);
+    border-radius: 14px;
+    padding: 20px 24px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(42,40,37,0.18);
+  }
+  .why-float-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1;
+  }
+  .why-float-txt { font-size: 0.72rem; opacity: 0.6; letter-spacing: 0.1em; margin-top: 6px; }
+
+  .why-features { display: flex; flex-direction: column; gap: 28px; }
+
+  .feature-item {
+    display: flex; gap: 20px; align-items: flex-start;
+    padding: 28px;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--sand);
+    transition: all 0.3s;
+  }
+  .feature-item:hover { border-color: var(--gold-light); transform: translateX(6px); }
+
+  .feature-icon-wrap {
+    width: 48px; height: 48px;
+    background: var(--gold-pale);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    border: 1px solid var(--gold-light);
+  }
+  .feature-title { font-weight: 500; color: var(--charcoal); margin-bottom: 6px; font-size: 0.95rem; }
+  .feature-desc { font-size: 0.82rem; color: var(--warm-gray); line-height: 1.65; font-weight: 300; }
+
+  /* ── DOCTORS ── */
+  .doctors {
+    padding: 120px 60px;
+    background: var(--ivory);
+  }
+
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+    margin-top: 64px;
+  }
+
+  .doctor-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--sand);
+    background: #fff;
+    transition: all 0.4s;
+  }
+  .doctor-card:hover { box-shadow: 0 20px 60px rgba(42,40,37,0.1); transform: translateY(-4px); }
+
+  .doctor-avatar-wrap {
+    height: 240px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 5rem;
+    position: relative;
+  }
+  .doctor-card:nth-child(1) .doctor-avatar-wrap { background: linear-gradient(135deg, var(--blush), #f9e8e3); }
+  .doctor-card:nth-child(2) .doctor-avatar-wrap { background: linear-gradient(135deg, var(--sage-light), #c8daca); }
+  .doctor-card:nth-child(3) .doctor-avatar-wrap { background: linear-gradient(135deg, var(--gold-pale), var(--sand)); }
+
+  .doctor-badge-tag {
+    position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    background: rgba(42,40,37,0.8);
+    color: var(--gold);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 100px;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+  }
+
+  .doctor-info { padding: 28px; }
+  .doctor-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 4px;
+  }
+  .doctor-spec { font-size: 0.78rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; font-weight: 500; }
+  .doctor-exp { font-size: 0.82rem; color: var(--warm-gray); font-weight: 300; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    padding: 100px 60px;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--ivory) 100%);
+  }
+
+  .reviews-row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-top: 64px;
+  }
+
+  .review-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 36px;
+    border: 1px solid var(--sand);
+    transition: all 0.35s;
+  }
+  .review-card:hover { border-color: var(--gold-light); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(42,40,37,0.08); }
+
+  .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 18px; }
+
+  .review-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--charcoal);
+    line-height: 1.65;
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+
+  .reviewer { display: flex; align-items: center; gap: 12px; }
+  .reviewer-dot {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+  }
+  .d1 { background: linear-gradient(135deg, var(--sage), #6a8a6c); }
+  .d2 { background: linear-gradient(135deg, var(--gold), #b8925f); }
+  .d3 { background: linear-gradient(135deg, #c4a5c0, #a07ea0); }
+
+  .reviewer-name { font-weight: 500; font-size: 0.88rem; color: var(--charcoal); }
+  .reviewer-loc { font-size: 0.72rem; color: var(--warm-gray); margin-top: 2px; }
+
+  /* ── CTA ── */
+  .cta-section {
+    margin: 0 60px 80px;
+    background: var(--charcoal);
+    border-radius: 24px;
+    padding: 80px 80px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 350px; height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,169,110,0.18) 0%, transparent 70%);
+  }
+  .cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 200px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,169,110,0.1) 0%, transparent 70%);
+  }
+
+  .cta-tag { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; font-weight: 500; }
+  .cta-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    font-weight: 300;
+    color: var(--ivory);
+    line-height: 1.2;
+  }
+  .cta-title em { font-style: italic; color: var(--gold); }
+
+  .cta-actions { display: flex; flex-direction: column; gap: 14px; position: relative; z-index: 2; flex-shrink: 0; }
+
+  .cta-phone {
+    display: flex; align-items: center; gap: 12px;
+    color: var(--ivory); text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+  }
+  .cta-phone-icon { font-size: 1rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal);
+    padding: 60px 60px 30px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--ivory);
+    margin-bottom: 14px;
+  }
+  .footer-brand-name span { color: var(--gold); }
+
+  .footer-desc { font-size: 0.82rem; color: rgba(250,248,244,0.45); line-height: 1.7; max-width: 260px; font-weight: 300; }
+
+  .footer-col-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .footer-links a {
+    text-decoration: none;
+    font-size: 0.82rem;
+    color: rgba(250,248,244,0.5);
+    transition: color 0.25s;
+    font-weight: 300;
+  }
+  .footer-links a:hover { color: var(--gold); }
+
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+  .footer-copy { font-size: 0.75rem; color: rgba(250,248,244,0.3); font-weight: 300; }
+  .footer-hyd {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── BOOKING PILL ── */
+  .book-pill {
+    position: fixed;
+    bottom: 32px; right: 32px;
+    background: var(--gold);
+    color: var(--charcoal);
+    border-radius: 100px;
+    padding: 14px 28px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 28px rgba(201,169,110,0.45);
+    cursor: pointer;
+    border: none;
+    animation: fadeUp 1s 1.2s ease both;
+    z-index: 200;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .book-pill:hover { background: var(--charcoal); color: var(--gold); transform: translateY(-3px); }
+
+  @media (max-width: 900px) {
+    nav { padding: 18px 24px; }
+    .nav-links { display: none; }
+    .hero, .why { grid-template-columns: 1fr; padding: 100px 24px 60px; }
+    .hero-visual { display: none; }
+    .stats-bar { grid-template-columns: repeat(2,1fr); padding: 40px 24px; }
+    .services, .doctors, .testimonials { padding: 80px 24px; }
+    .services-grid, .doctors-grid, .reviews-row { grid-template-columns: 1fr; }
+    .cta-section { margin: 0 24px 60px; padding: 48px 36px; grid-template-columns: 1fr; }
+    footer { padding: 48px 24px 24px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Lumina<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Our Team</a></li>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Testimonials</a></li>
+    <li><a href="#" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-circle"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">✦ Hyderabad's Premier Dental Studio</div>
+
+    <h1 class="hero-title">
+      Your Smile,<br>
+      <em>Reimagined</em><br>
+      with Precision
+    </h1>
+
+    <p class="hero-sub">
+      Where Swiss dental artistry meets compassionate care. Experience dentistry elevated to its finest form — in the heart of Hyderabad.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">Book a Consultation</a>
+      <a href="#" class="btn-ghost">View Services</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-card-main">
+      <div class="tooth-icon">🦷</div>
+      <div class="card-label">Lumina Dental</div>
+      <div class="card-sub">Est. 2009 · Hyderabad</div>
+    </div>
+
+    <div class="stat-card stat-card-1">
+      <div class="stat-number">4.9</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+
+    <div class="stat-card stat-card-2">
+      <div class="stat-number">12K+</div>
+      <div class="stat-label">Smiles Restored</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item reveal">
+    <div class="num">15+</div>
+    <div class="txt">Years of Excellence</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="num">12K+</div>
+    <div class="txt">Happy Patients</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="num">18</div>
+    <div class="txt">Specialist Doctors</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="num">4.9★</div>
+    <div class="txt">Average Rating</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="section-tag">What We Offer</div>
+  <h2 class="section-title">Comprehensive Care for <em>Every Smile</em></h2>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-icon">✨</span>
+      <div class="service-name">Smile Design</div>
+      <p class="service-desc">Full-mouth digital smile design with ceramic veneers crafted to your golden ratio — natural, luminous, entirely yours.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-icon">🔬</span>
+      <div class="service-name">Implantology</div>
+      <p class="service-desc">Nobel Biocare and Straumann implants placed with guided surgical precision. Permanent. Painless. Life-changing.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-icon">🌿</span>
+      <div class="service-name">Teeth Whitening</div>
+      <p class="service-desc">Zoom! and Philips Zoom Whitening for up to 8 shades brighter — in a single, comfortable session.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-icon">💎</span>
+      <div class="service-name">Ceramic Veneers</div>
+      <p class="service-desc">Handcrafted in our in-house lab by master ceramists. Each veneer is a work of translucent art.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-icon">🦴</span>
+      <div class="service-name">Orthodontics</div>
+      <p class="service-desc">Invisible aligners and lingual braces — straighten discreetly while living your life fully and confidently.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-icon">🛡️</span>
+      <div class="service-name">Preventive Care</div>
+      <p class="service-desc">Comprehensive oral health assessments, digital X-rays, and personalised hygiene programs to protect your smile for life.</p>
+      <a href="#" class="service-link">Explore →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <div class="why-visual reveal">
+    <div class="why-card-big">
+      <p class="why-quote">"I never imagined dentistry could feel this luxurious. Lumina restored not just my teeth — but my confidence."</p>
+      <div class="why-author">
+        <div class="author-avatar">😊</div>
+        <div>
+          <div class="author-name">Priya Reddy</div>
+          <div class="author-role">Software Lead, Hyderabad</div>
+        </div>
+      </div>
+    </div>
+    <div class="why-float">
+      <div class="why-float-num">98%</div>
+      <div class="why-float-txt">Patient Satisfaction</div>
+    </div>
+  </div>
+
+  <div class="why-features">
+    <div class="section-tag">Why Lumina</div>
+    <h2 class="section-title">Dentistry at the <em>Highest Standard</em></h2>
+
+    <div class="feature-item reveal">
+      <div class="feature-icon-wrap">🖥️</div>
+      <div>
+        <div class="feature-title">3D Digital Planning</div>
+        <div class="feature-desc">CBCT scans and CAD/CAM technology ensure every procedure is planned to sub-millimetre accuracy before we begin.</div>
+      </div>
+    </div>
+
+    <div class="feature-item reveal">
+      <div class="feature-icon-wrap">💉</div>
+      <div>
+        <div class="feature-title">Pain-Free Protocols</div>
+        <div class="feature-desc">STA single-tooth anaesthesia and laser-assisted procedures mean most patients feel nothing beyond mild pressure.</div>
+      </div>
+    </div>
+
+    <div class="feature-item reveal">
+      <div class="feature-icon-wrap">🏅</div>
+      <div>
+        <div class="feature-title">International Certifications</div>
+        <div class="feature-desc">Our doctors trained at NYU, Tufts, and the Royal College of Surgeons, bringing global expertise home to Hyderabad.</div>
+      </div>
+    </div>
+
+    <div class="feature-item reveal">
+      <div class="feature-icon-wrap">✈️</div>
+      <div>
+        <div class="feature-title">Dental Tourism Ready</div>
+        <div class="feature-desc">Premium packages for NRIs and international patients with airport transfers, hotel tie-ups, and virtual consultations.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="doctors">
+  <div class="section-tag">The Team</div>
+  <h2 class="section-title">Meet Our <em>Specialists</em></h2>
+
+  <div class="doctors-grid">
+    <div class="doctor-card reveal">
+      <div class="doctor-avatar-wrap">
+        👩‍⚕️
+        <span class="doctor-badge-tag">Cosmetic Specialist</span>
+      </div>
+      <div class="doctor-info">
+        <div class="doctor-name">Dr. Kavitha Sharma</div>
+        <div class="doctor-spec">Smile Design & Veneers</div>
+        <div class="doctor-exp">MDS Prosthodontics · 14 Years · NYU Alumna</div>
+      </div>
+    </div>
+
+    <div class="doctor-card reveal">
+      <div class="doctor-avatar-wrap">
+        👨‍⚕️
+        <span class="doctor-badge-tag">Implant Surgeon</span>
+      </div>
+      <div class="doctor-info">
+        <div class="doctor-name">Dr. Arjun Mehta</div>
+        <div class="doctor-spec">Oral Implantology</div>
+        <div class="doctor-exp">MDS Oral Surgery · 18 Years · Royal College Fellow</div>
+      </div>
+    </div>
+
+    <div class="doctor-card reveal">
+      <div class="doctor-avatar-wrap">
+        👩‍⚕️
+        <span class="doctor-badge-tag">Orthodontist</span>
+      </div>
+      <div class="doctor-info">
+        <div class="doctor-name">Dr. Sneha Rao</div>
+        <div class="doctor-spec">Invisalign & Braces</div>
+        <div class="doctor-exp">MDS Orthodontics · 11 Years · Tufts Alumna</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-tag">Patient Stories</div>
+  <h2 class="section-title">Words from Our <em>Family</em></h2>
+
+  <div class="reviews-row">
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"The veneers are absolutely stunning. People think I was born with this smile. The team at Lumina is truly world-class."</p>
+      <div class="reviewer">
+        <div class="reviewer-dot d1">RK</div>
+        <div>
+          <div class="reviewer-name">Rahul Kapur</div>
+          <div class="reviewer-loc">Banjara Hills, Hyderabad</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"As an NRI flying in from Dubai, Lumina made everything seamless — from virtual consultation to the final result. Perfection."</p>
+      <div class="reviewer">
+        <div class="reviewer-dot d2">AM</div>
+        <div>
+          <div class="reviewer-name">Ananya Mishra</div>
+          <div class="reviewer-loc">NRI Patient, Dubai</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Two implants, zero pain. I was terrified walking in and completely relaxed walking out. Lumina changed how I see dentistry."</p>
+      <div class="reviewer">
+        <div class="reviewer-dot d3">VS</div>
+        <div>
+          <div class="reviewer-name">Vikram Sinha</div>
+          <div class="reviewer-loc">Jubilee Hills, Hyderabad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section reveal">
+  <div>
+    <div class="cta-tag">✦ Begin Your Journey</div>
+    <h2 class="cta-title">Your Dream Smile is<br><em>One Consultation Away</em></h2>
+  </div>
+  <div class="cta-actions">
+    <a href="#" class="btn-primary" style="text-align:center;">Book Free Consultation</a>
+    <a href="tel:+9140480012XX" class="cta-phone">
+      <span class="cta-phone-icon">📞</span>
+      +91 40 4800 12XX
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Lumina<span>.</span></div>
+      <p class="footer-desc">Hyderabad's most trusted premium dental studio, redefining smiles since 2009. Where artistry meets science.</p>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">Smile Design</a></li>
+        <li><a href="#">Implants</a></li>
+        <li><a href="#">Veneers</a></li>
+        <li><a href="#">Orthodontics</a></li>
+        <li><a href="#">Whitening</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Clinic</div>
+      <ul class="footer-links">
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Visit Us</div>
+      <ul class="footer-links">
+        <li><a href="#">8-2-293/82/A, Rd No. 12</a></li>
+        <li><a href="#">Banjara Hills, Hyderabad</a></li>
+        <li><a href="#">Telangana 500 034</a></li>
+        <li><a href="#">Mon–Sat: 9am – 8pm</a></li>
+        <li><a href="#">+91 40 4800 12XX</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Lumina Dental Studio. All rights reserved.</div>
+    <div class="footer-hyd">Crafted with care in Hyderabad ♡</div>
+    <div class="footer-copy">Developed By AWD Services</div>
+  </div>
+</footer>
+
+<!-- BOOK PILL -->
+<a href="#" class="book-pill">Book Now</a>
+
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 80 * (Array.from(entry.target.parentNode.children).indexOf(entry.target)));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
