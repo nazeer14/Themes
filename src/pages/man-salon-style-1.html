@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIR — The Gentleman's Atelier</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/man-salon-1.css">
+</head>
+<body>
+
+<!-- Scissors Cursor -->
+<div class="scissors-cursor" id="scissorsCursor">
+  <svg id="scissorsSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+    <!-- Top blade -->
+    <g id="bladeTop">
+      <circle cx="9" cy="9" r="5.5" fill="none" stroke="#B8912A" stroke-width="1.8"/>
+      <circle cx="9" cy="9" r="2" fill="#B8912A"/>
+      <line x1="13.5" y1="13.5" x2="42" y2="26" stroke="#B8912A" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Bottom blade -->
+    <g id="bladeBottom">
+      <circle cx="9" cy="39" r="5.5" fill="none" stroke="#B8912A" stroke-width="1.8"/>
+      <circle cx="9" cy="39" r="2" fill="#B8912A"/>
+      <line x1="13.5" y1="34.5" x2="42" y2="26" stroke="#B8912A" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Pivot screw -->
+    <circle cx="24" cy="26" r="2.2" fill="#D4A840"/>
+  </svg>
+</div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">N<span>O</span>IR</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#philosophy">Atelier</a></li>
+    <li><a href="#team">Masters</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#booking">Contact</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Book Now</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span>Est. 2018 · Hyderabad</span>
+    </div>
+    <h1 class="hero-title">
+      The Art of<br><em>Refined</em><br>Grooming
+    </h1>
+    <p class="hero-desc">
+      Where precision meets ritual. Experience bespoke grooming crafted for the discerning gentleman — because how you present yourself is your first statement to the world.
+    </p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">
+        <span>Reserve Your Visit</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#services" class="btn-ghost">
+        Explore Services
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v10M2 7h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">12<span>k+</span></div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+      <div>
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">Master Barbers</div>
+      </div>
+      <div>
+        <div class="stat-num">6<span>y</span></div>
+        <div class="stat-label">Years of Craft</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-right-bg"></div>
+    <div class="hero-geometric">
+      <div class="geo-circle-1"></div>
+      <div class="geo-circle-2"></div>
+      <div class="geo-circle-3"></div>
+      <div class="geo-line-h"></div>
+      <div class="geo-line-v"></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-center-emblem">
+        <div class="emblem-scissor">✂</div>
+        <div class="emblem-text">The Gentleman's Atelier</div>
+      </div>
+    </div>
+    <div class="floating-tag tag-1">Classic Cut</div>
+    <div class="floating-tag tag-2">Hot Towel Shave</div>
+    <div class="floating-tag tag-3">Beard Sculpt</div>
+    <div class="floating-tag tag-4">Scalp Ritual</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SHOP CATEGORIES — PREMIUM BENTO GRID
+════════════════════════════════════════ -->
+<section class="shop-section" id="shop">
+
+  <!-- Header -->
+  <div class="shop-header reveal">
+    <div class="shop-title-block">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span>Book a Service</span>
+      </div>
+      <h2 class="section-title">Our <em>Signature</em><br>Experiences</h2>
+    </div>
+    <a href="#booking" class="shop-view-all">
+      View All &amp; Book
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+
+  <!-- Filter Pills -->
+  <div class="shop-filters reveal">
+    <button class="filter-btn active" onclick="filterSC('all',this)">All Services</button>
+    <button class="filter-btn" onclick="filterSC('hair',this)">✂ Hair</button>
+    <button class="filter-btn" onclick="filterSC('shave',this)">🪒 Shave</button>
+    <button class="filter-btn" onclick="filterSC('beard',this)">🧔 Beard</button>
+    <button class="filter-btn" onclick="filterSC('skin',this)">💆 Skin & Scalp</button>
+    <button class="filter-btn" onclick="filterSC('package',this)">👑 Packages</button>
+  </div>
+
+  <!-- Bento Grid -->
+  <div class="shop-bento" id="shopBento">
+
+    <!-- 1 — Signature Cut (large) -->
+    <div class="sc sc-1 reveal reveal-delay-1" data-sc="hair">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-badge sc-badge-dark">⭐ Most Popular</span>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Signature Cut')">✦ Book Now</button>
+          <button class="sc-overlay-wish" onclick="toggleWish(this.previousElementSibling)">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Hair · 45 min</div>
+        <div class="sc-name">Signature Cut</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(348)</span>
+          <span class="sc-time">⏱ 45 min</span>
+        </div>
+        <div class="sc-desc">Bespoke cut tailored to your face shape & bone structure. Includes precision scissor work, hot towel finish and expert styling.</div>
+        <div class="sc-footer">
+          <div>
+            <div class="sc-price"><sup>₹</sup>799</div>
+          </div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 — Royal Shave -->
+    <div class="sc sc-2 reveal reveal-delay-2" data-sc="shave">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-badge sc-badge-gold">Signature</span>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Royal Shave')">✦ Book Now</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Shave · 35 min</div>
+        <div class="sc-name">Royal Shave</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(212)</span>
+          <span class="sc-time">⏱ 35 min</span>
+        </div>
+        <div class="sc-desc">Hot towel. Straight razor precision. Cold balm close. The definitive gentleman's shave.</div>
+        <div class="sc-footer">
+          <div class="sc-price"><sup>₹</sup>599</div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 — Beard Atelier (slim) -->
+    <div class="sc sc-3 reveal reveal-delay-3" data-sc="beard">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-badge sc-badge-green">New</span>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Beard Atelier')">✦ Book</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Beard · 30 min</div>
+        <div class="sc-name">Beard Atelier</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(189)</span>
+        </div>
+        <div class="sc-footer">
+          <div class="sc-price"><sup>₹</sup>499</div>
+          <a href="#booking" class="sc-book-btn">Book →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 — Scalp Ritual -->
+    <div class="sc sc-4 reveal reveal-delay-4" data-sc="skin">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Scalp Ritual')">✦ Book Now</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Scalp · 50 min</div>
+        <div class="sc-name">Scalp Ritual</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(97)</span>
+          <span class="sc-time">⏱ 50 min</span>
+        </div>
+        <div class="sc-desc">Deep exfoliation, nourishing serum & invigorating pressure-point massage to restore scalp vitality.</div>
+        <div class="sc-footer">
+          <div class="sc-price"><sup>₹</sup>899</div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 — Head Massage -->
+    <div class="sc sc-5 reveal reveal-delay-1" data-sc="skin">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Head Massage')">✦ Book Now</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Relax · 40 min</div>
+        <div class="sc-name">Head Massage</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(201)</span>
+          <span class="sc-time">⏱ 40 min</span>
+        </div>
+        <div class="sc-desc">Ayurvedic oil infusion and pressure-point therapy for deep relaxation and hair nourishment.</div>
+        <div class="sc-footer">
+          <div class="sc-price"><sup>₹</sup>449</div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 — Hair Artistry (wide) -->
+    <div class="sc sc-6 reveal reveal-delay-2" data-sc="hair">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-badge sc-badge-white">Premium</span>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Hair Artistry')">✦ Book Now</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Color · 90 min</div>
+        <div class="sc-name">Hair Artistry</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(143)</span>
+          <span class="sc-time">⏱ 90 min</span>
+        </div>
+        <div class="sc-desc">Ammonia-free coloring, highlights & toning by certified artists. From natural grey to bold contemporary looks.</div>
+        <div class="sc-footer">
+          <div>
+            <div class="sc-price"><sup>₹</sup>1,299 <span class="sc-price-orig">₹1,599</span></div>
+          </div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 — Luxury Facial -->
+    <div class="sc sc-7 reveal reveal-delay-3" data-sc="skin">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Luxury Facial')">✦ Book Now</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Skin · 60 min</div>
+        <div class="sc-name">Luxury Facial</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★☆</span>
+          <span class="sc-reviews">(74)</span>
+          <span class="sc-time">⏱ 60 min</span>
+        </div>
+        <div class="sc-desc">Vitamin-C serum, deep pore cleanse, jade roller massage and hydration lock mask.</div>
+        <div class="sc-footer">
+          <div class="sc-price"><sup>₹</sup>1,099</div>
+          <a href="#booking" class="sc-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 — Grand Package (tall) -->
+    <div class="sc sc-8 reveal reveal-delay-4" data-sc="package">
+      <div class="sc-img">
+        <div class="sc-img-inner"></div>
+        <span class="sc-badge sc-badge-gold">Best Value</span>
+        <span class="sc-wish" onclick="toggleWish(this)">♡</span>
+        <div class="sc-quick-overlay">
+          <button class="sc-overlay-book" onclick="quickSC('Grand Package')">✦ Book</button>
+          <button class="sc-overlay-wish">♡</button>
+        </div>
+      </div>
+      <div class="sc-info">
+        <div class="sc-cat">Package · 3 hrs</div>
+        <div class="sc-name">The Grand<br>Package</div>
+        <div class="sc-meta">
+          <span class="sc-stars">★★★★★</span>
+          <span class="sc-reviews">(422)</span>
+        </div>
+        <div class="sc-footer" style="flex-direction:column;align-items:flex-start;gap:12px;">
+          <div class="sc-price"><sup>₹</sup>2,499</div>
+          <a href="#booking" class="sc-book-btn" style="width:100%;justify-content:center;">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /shop-bento -->
+
+  <!-- Trust Bar -->
+  <div class="shop-trust reveal">
+    <div class="trust-item">
+      <span class="trust-icon">🕐</span>
+      <div class="trust-text"><strong>Easy Rescheduling</strong>Free up to 2 hrs before</div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">✨</span>
+      <div class="trust-text"><strong>Premium Products</strong>Organic & dermatologist-approved</div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🏅</span>
+      <div class="trust-text"><strong>Master Barbers</strong>2,000+ hours trained</div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">💳</span>
+      <div class="trust-text"><strong>Pay at Salon</strong>No advance required</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Marquee -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item"><span>Precision Haircut</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Hot Towel Shave</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Beard Sculpting</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Scalp Ritual</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Hair Coloring</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Luxury Facial</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Head Massage</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Grooming Ritual</span><div class="marquee-dot"></div></div>
+    <!-- duplicate for seamless loop -->
+    <div class="marquee-item"><span>Precision Haircut</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Hot Towel Shave</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Beard Sculpting</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Scalp Ritual</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Hair Coloring</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Luxury Facial</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Head Massage</span><div class="marquee-dot"></div></div>
+    <div class="marquee-item"><span>Grooming Ritual</span><div class="marquee-dot"></div></div>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span>Our Crafts</span>
+      </div>
+      <h2 class="section-title">Services of<br><em>Distinction</em></h2>
+    </div>
+    <p class="section-desc">Each service is an orchestrated ritual, performed with precision instruments and premium formulations sourced from the finest ateliers worldwide.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-number">01</div>
+      <span class="service-icon">✂️</span>
+      <div class="service-name">Signature Cut</div>
+      <div class="service-detail">A bespoke haircut tailored to your bone structure and personal aesthetic. Includes precision scissor work, a hot towel finish, and styling consultation.</div>
+      <div class="service-price">₹799 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-number">02</div>
+      <span class="service-icon">🪒</span>
+      <div class="service-name">Royal Shave</div>
+      <div class="service-detail">The ceremonial hot towel shave. Pre-shave oil, hot steam preparation, luxury cream lather, straight razor precision, and cold balm closure.</div>
+      <div class="service-price">₹599 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-number">03</div>
+      <span class="service-icon">🧔</span>
+      <div class="service-name">Beard Atelier</div>
+      <div class="service-detail">Expert beard shaping and sculpting that defines your jawline and frames your features. Includes beard conditioning and finishing with premium beard oil.</div>
+      <div class="service-price">₹499 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-number">04</div>
+      <span class="service-icon">💆</span>
+      <div class="service-name">Scalp Ritual</div>
+      <div class="service-detail">A deep scalp therapy combining exfoliation, nourishing serums, and an invigorating massage to stimulate growth and restore vitality.</div>
+      <div class="service-price">₹899 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-number">05</div>
+      <span class="service-icon">🎨</span>
+      <div class="service-name">Hair Artistry</div>
+      <div class="service-detail">Premium coloring, highlights, and toning services using ammonia-free formulations. From natural-looking grays to bold statements.</div>
+      <div class="service-price">₹1,299 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-number">06</div>
+      <span class="service-icon">👑</span>
+      <div class="service-name">The Grand Package</div>
+      <div class="service-detail">The complete NOIR experience. Signature cut, royal shave, beard sculpt, scalp ritual, and a luxury facial. Reserved for those who seek perfection.</div>
+      <div class="service-price">₹2,499 <span>/ session</span></div>
+      <div class="service-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="philosophy" id="philosophy">
+  <div class="philosophy-visual">
+    <div class="philosophy-pattern"></div>
+    <div class="philosophy-quote">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">A gentleman's appearance is his silent autobiography, written in the language of care and intention.</p>
+      <div class="quote-author">— The NOIR Philosophy</div>
+    </div>
+  </div>
+  <div class="philosophy-content">
+    <div class="section-eyebrow reveal">
+      <div class="section-eyebrow-line"></div>
+      <span>Our Atelier</span>
+    </div>
+    <h2 class="section-title reveal">Crafted with<br><em>Obsession</em></h2>
+    <div class="philosophy-points">
+      <div class="point reveal reveal-delay-1">
+        <div class="point-num">01</div>
+        <div class="point-content">
+          <h4>Master-Level Artisans</h4>
+          <p>Every barber at NOIR has undergone a minimum of 2,000 hours of specialized training, mastering techniques from London to Tokyo.</p>
+        </div>
+      </div>
+      <div class="point reveal reveal-delay-2">
+        <div class="point-num">02</div>
+        <div class="point-content">
+          <h4>Premium Formulations</h4>
+          <p>We use only certified-organic, dermatologist-approved products from heritage brands. No compromises on what touches your skin.</p>
+        </div>
+      </div>
+      <div class="point reveal reveal-delay-3">
+        <div class="point-num">03</div>
+        <div class="point-content">
+          <h4>Personalized Ritual</h4>
+          <p>Your profile, preferences, and style history are maintained. Every visit is a continuation of a deeply personal grooming journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section class="booking" id="booking">
+  <div class="booking-inner">
+    <div class="booking-header reveal">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line" style="background:var(--gold)"></div>
+        <span>Reserve a Visit</span>
+      </div>
+      <h2 class="booking-title">Book Your<br><em>Experience</em></h2>
+      <p class="booking-sub">Secure your appointment in under 60 seconds. We'll confirm within the hour.</p>
+    </div>
+
+    <div class="booking-form reveal" id="bookingForm">
+      <div class="booking-success" id="bookingSuccess">
+        <div class="success-icon">✅</div>
+        <div class="success-title">Reservation Confirmed</div>
+        <div class="success-text">Your visit has been scheduled. A confirmation has been sent to your contact. We look forward to welcoming you.</div>
+        <div class="success-id" id="bookingId">NOIR-2024-XXXX</div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Arjun Mehta" id="nameInput">
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" placeholder="+91 98765 43210" id="phoneInput">
+        </div>
+        <div class="form-group">
+          <label>Preferred Service</label>
+          <select id="serviceInput">
+            <option value="" disabled selected>Select a service</option>
+            <option>Signature Cut — ₹799</option>
+            <option>Royal Shave — ₹599</option>
+            <option>Beard Atelier — ₹499</option>
+            <option>Scalp Ritual — ₹899</option>
+            <option>Hair Artistry — ₹1,299</option>
+            <option>The Grand Package — ₹2,499</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" id="dateInput">
+        </div>
+        <div class="form-group full">
+          <label>Preferred Time</label>
+          <div class="time-slots" id="timeSlots">
+            <button class="time-slot" onclick="selectTime(this)">10:00 AM</button>
+            <button class="time-slot" onclick="selectTime(this)">11:00 AM</button>
+            <button class="time-slot" onclick="selectTime(this)">12:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">01:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">02:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">03:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">04:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">05:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">06:00 PM</button>
+            <button class="time-slot" onclick="selectTime(this)">07:00 PM</button>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Special Requests (Optional)</label>
+          <textarea placeholder="Any specific preferences, allergies, or notes for your barber..."></textarea>
+        </div>
+      </div>
+      <div class="form-bottom">
+        <div class="form-note">By booking, you agree to our cancellation policy. Free cancellations up to 2 hours before your appointment.</div>
+        <button class="btn-book" onclick="submitBooking()">
+          <span>Confirm Reservation</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="team" id="team">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span>The Masters</span>
+      </div>
+      <h2 class="section-title">Your <em>Artists</em></h2>
+    </div>
+    <p class="section-desc">Each member of the NOIR team is a specialist, trained in classical and contemporary techniques. They are not just barbers — they are craftsmen.</p>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card reveal reveal-delay-1">
+      <div class="team-avatar">
+        <div class="avatar-initials"><span class="initials-text">RK</span></div>
+        <div class="team-overlay"></div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Rajan Kumar</div>
+        <div class="team-role">Head Barber</div>
+        <div class="team-exp">12 years · London & Mumbai trained</div>
+      </div>
+    </div>
+    <div class="team-card reveal reveal-delay-2">
+      <div class="team-avatar">
+        <div class="avatar-initials"><span class="initials-text">AS</span></div>
+        <div class="team-overlay"></div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Aryan Shah</div>
+        <div class="team-role">Blade Specialist</div>
+        <div class="team-exp">8 years · Classic shaving expert</div>
+      </div>
+    </div>
+    <div class="team-card reveal reveal-delay-3">
+      <div class="team-avatar">
+        <div class="avatar-initials"><span class="initials-text">VM</span></div>
+        <div class="team-overlay"></div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Vikram Menon</div>
+        <div class="team-role">Color Artist</div>
+        <div class="team-exp">10 years · Certified colorist</div>
+      </div>
+    </div>
+    <div class="team-card reveal reveal-delay-4">
+      <div class="team-avatar">
+        <div class="avatar-initials"><span class="initials-text">KP</span></div>
+        <div class="team-overlay"></div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Kiran Pillai</div>
+        <div class="team-role">Scalp Therapist</div>
+        <div class="team-exp">7 years · Trichology certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span>Client Stories</span>
+      </div>
+      <h2 class="section-title">Words of<br><em>Distinction</em></h2>
+    </div>
+    <p class="section-desc">Our clients are our finest testimonial. Their words reflect the standard we hold ourselves to — perfection, every single visit.</p>
+  </div>
+
+  <div class="testimonial-track">
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">"Walking into NOIR feels like entering another era. The craftsmanship, the attention to detail, the atmosphere — nothing comes close in all of Hyderabad."</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">AM</div>
+        <div>
+          <div class="author-name">Aditya Malhotra</div>
+          <div class="author-since">Client since 2020</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">"The Grand Package is not just a service — it's a three-hour meditation. I leave feeling like an entirely different person. Worth every rupee and more."</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">RB</div>
+        <div>
+          <div class="author-name">Rohit Balasubramaniam</div>
+          <div class="author-since">Client since 2019</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-3">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">"Rajan read my bone structure better than any barber ever has. My haircut has become a signature part of my identity. I simply won't go anywhere else."</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">SK</div>
+        <div>
+          <div class="author-name">Siddharth Kapoor</div>
+          <div class="author-since">Client since 2021</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">N<span>O</span>IR</span>
+      <p class="footer-tagline">The gentleman's atelier. Where ancient craft meets modern precision, in the heart of Hyderabad.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul class="footer-links">
+        <li><a href="#">Signature Cut</a></li>
+        <li><a href="#">Royal Shave</a></li>
+        <li><a href="#">Beard Atelier</a></li>
+        <li><a href="#">Scalp Ritual</a></li>
+        <li><a href="#">Grand Package</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <ul class="footer-links">
+        <li><a href="#">About NOIR</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Membership</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-hours">
+      <h5>Opening Hours</h5>
+      <p>Mon – Fri: 10am – 8pm</p>
+      <p>Saturday: 9am – 9pm</p>
+      <p>Sunday: 10am – 6pm</p>
+      <p style="margin-top:16px;color:var(--gold);font-size:13px;">+91 40 1234 56XX</p>
+      <p style="color:rgba(248,244,238,0.4);color: var(--gold);font-size:14px;font-weight:300;">info@noir.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 NOIR — The Gentleman's Atelier. All rights reserved.</div>
+    <div class="footer-socials">
+      <a class="social-link" href="#">𝕏</a>
+      <a class="social-link" href="#">in</a>
+      <a class="social-link" href="#">▶</a>
+      <a class="social-link" href="#">📸</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/man-salon-1.js"></script>
+</body>
+</html>
