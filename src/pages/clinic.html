@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AroraCare Clinic — Your Health, Our Priority</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/clinic.css">
+</head>
+<body>
+
+<!-- FLOATING BTN -->
+<a href="#appointment" class="fab">
+  <div class="fab-pulse"></div>
+  <span>Book Appointment</span>
+</a>
+
+<!-- ── HEADER ── -->
+<header id="header">
+  <nav>
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M11 5h2v4h3l-4 5-4-5h3z"/></svg>
+      </div>
+      <span class="logo-text">Arora<span>Care</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#appointment" class="btn btn-primary nav-cta">Book Appointment</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#doctors" onclick="toggleMenu()">Doctors</a>
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="#appointment" onclick="toggleMenu()" class="btn btn-primary" style="margin-top:8px;justify-content:center;">Book Appointment</a>
+</div>
+
+<!-- ── Hero Slider ──-->
+ <section class="hero-slider" id="heroSlider">
+ 
+  <div class="slides-track" id="slidesTrack">
+ 
+    <!-- ══ SLIDE 1 ══ -->
+    <div class="slide slide-1 active">
+      <!-- Deco circles -->
+      <div class="slide-deco" style="width:500px;height:500px;background:rgba(90,155,127,0.07);top:-180px;right:-80px;"></div>
+      <div class="slide-deco" style="width:260px;height:260px;background:rgba(74,144,184,0.05);bottom:-80px;left:30%;"></div>
+ 
+      <!-- Doctor panel -->
+      <div class="doctor-panel">
+        <div class="doctor-figure">
+          <!-- <div class="doctor-shape" style="background:radial-gradient(circle at 60% 100%, #a8d8c0, #c5e8f5);"></div> -->
+          <div class="doctor-avatar">
+            <i class="fas fa-user-md"></i>
+          </div>
+        </div>
+        <div class="doctor-badge">
+          <div class="badge-icon" style="background:#e8f5ef;color:#5a9b7f;"><i class="fas fa-heartbeat"></i></div>
+          <div>
+            <div class="badge-label">Specialty</div>
+            <div class="badge-value">Cardiology</div>
+          </div>
+        </div>
+        <div class="exp-pill">
+          <div class="exp-dot"></div>
+          <div class="exp-text">Available Today</div>
+        </div>
+      </div>
+          <!-- Content -->
+      <div class="slide-content">
+        <div class="slide-tag" style="background:rgba(90,155,127,0.12);color:#5a9b7f;">
+          <i class="fas fa-circle" style="font-size:0.5rem;"></i> Cardiac Care
+        </div>
+        <h1 class="slide-title">
+          Expert Heart Care<br>
+          <span class="accent" style="color:#5a9b7f;">You Can Trust</span>
+        </h1>
+        <p class="slide-desc">State-of-the-art cardiac diagnostics and treatment from our award-winning specialists. Your heart health is our top priority.</p>
+        <a href="#appointment" class="slide-cta" style="background:#5a9b7f;box-shadow:0 6px 22px rgba(90,155,127,0.35);">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+        <div class="testimonial-block">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Dr. Mitchell identified my condition immediately. The cardiac team gave me my life back — I couldn't be more grateful."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#5a9b7f;">R</div>
+            <div>
+              <div class="testimonial-name">Rohan Mehta</div>
+              <div class="testimonial-role">Cardiac Patient · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+ 
+    <!-- ══ SLIDE 2 ══ -->
+    <div class="slide slide-2">
+      <div class="slide-deco" style="width:460px;height:460px;background:rgba(74,144,184,0.08);top:-160px;right:-60px;"></div>
+      <div class="slide-deco" style="width:220px;height:220px;background:rgba(90,155,127,0.06);bottom:-60px;left:35%;"></div>
+ 
+      <div class="doctor-panel">
+        <div class="doctor-figure">
+          <!-- <div class="doctor-shape" style="background:radial-gradient(circle at 60% 100%, #b8d8f0, #d4ede2);"></div> -->
+          <div class="doctor-avatar">
+            <i class="fas fa-user-md"></i>
+          </div>
+        </div>
+        <div class="doctor-badge">
+          <div class="badge-icon" style="background:#e8f4fd;color:#4a90b8;"><i class="fas fa-brain"></i></div>
+          <div>
+            <div class="badge-label">Specialty</div>
+            <div class="badge-value">Neurology</div>
+          </div>
+        </div>
+        <div class="exp-pill">
+          <div class="exp-dot" style="background:#4a90b8;"></div>
+          <div class="exp-text">11 Yrs Experience</div>
+        </div>
+      </div>
+ 
+      <div class="slide-content">
+        <div class="slide-tag" style="background:rgba(74,144,184,0.12);color:#4a90b8;">
+          <i class="fas fa-circle" style="font-size:0.5rem;"></i> Neuroscience
+        </div>
+        <h1 class="slide-title">
+          Advanced Neuro<br>
+          <span class="accent" style="color:#4a90b8;">Diagnostics & Care</span>
+        </h1>
+        <p class="slide-desc">From chronic migraines to complex neurological disorders — our specialists use the latest imaging and therapies for lasting relief.</p>
+        <a href="#appointment" class="slide-cta" style="background:#4a90b8;box-shadow:0 6px 22px rgba(74,144,184,0.35);">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+        <div class="testimonial-block">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"After months of struggle, Dr. Okonkwo gave me a treatment plan that actually works. My quality of life has transformed completely."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#4a90b8;">S</div>
+            <div>
+              <div class="testimonial-name">Sneha Pillai</div>
+              <div class="testimonial-role">Neuro Patient · 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ══ SLIDE 3 ══ -->
+    <div class="slide slide-3">
+      <div class="slide-deco" style="width:480px;height:480px;background:rgba(91,115,232,0.07);top:-160px;right:-80px;"></div>
+      <div class="slide-deco" style="width:240px;height:240px;background:rgba(90,155,127,0.05);bottom:-70px;left:30%;"></div>
+ 
+      <div class="doctor-panel">
+        <div class="doctor-figure">
+          <!-- <div class="doctor-shape" style="background:radial-gradient(circle at 60% 100%, #c0c8f8, #d4ede2);"></div> -->
+          <div class="doctor-avatar">
+            <i class="fas fa-user-md"></i>
+          </div>
+        </div>
+        <div class="doctor-badge">
+          <div class="badge-icon" style="background:#eff1ff;color:#5b73e8;"><i class="fas fa-bone"></i></div>
+          <div>
+            <div class="badge-label">Specialty</div>
+            <div class="badge-value">Orthopedics</div>
+          </div>
+        </div>
+        <div class="exp-pill">
+          <div class="exp-dot" style="background:#5b73e8;"></div>
+          <div class="exp-text">Top Rated Surgeon</div>
+        </div>
+      </div>
+ 
+      <div class="slide-content">
+        <div class="slide-tag" style="background:rgba(91,115,232,0.10);color:#5b73e8;">
+          <i class="fas fa-circle" style="font-size:0.5rem;"></i> Orthopedics
+        </div>
+        <h1 class="slide-title">
+          Move Freely<br>
+          <span class="accent" style="color:#5b73e8;">Live Without Pain</span>
+        </h1>
+        <p class="slide-desc">Joint replacements, spine surgery, and sports injury recovery — our orthopedic team restores mobility with minimally invasive precision.</p>
+        <a href="#appointment" class="slide-cta" style="background:#5b73e8;box-shadow:0 6px 22px rgba(91,115,232,0.35);">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+        <div class="testimonial-block">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Dr. Nair's knee surgery was flawless. Recovery was faster than expected and her follow-up care was thorough and reassuring every step of the way."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#5b73e8;">A</div>
+            <div>
+              <div class="testimonial-name">Arjun Singhania</div>
+              <div class="testimonial-role">Ortho Patient · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ══ SLIDE 4 ══ -->
+    <div class="slide slide-4">
+      <div class="slide-deco" style="width:440px;height:440px;background:rgba(180,100,70,0.07);top:-150px;right:-70px;"></div>
+      <div class="slide-deco" style="width:200px;height:200px;background:rgba(74,144,184,0.05);bottom:-60px;left:28%;"></div>
+ 
+      <div class="doctor-panel">
+        <div class="doctor-figure">
+          <!-- <div class="doctor-shape" style="background:radial-gradient(circle at 60% 100%, #f5c4b3, #d4ede2);"></div> -->
+          <div class="doctor-avatar">
+            <i class="fas fa-user-md"></i>
+          </div>
+        </div>
+        <div class="doctor-badge">
+          <div class="badge-icon" style="background:#fde8f0;color:#c45c8a;"><i class="fas fa-baby"></i></div>
+          <div>
+            <div class="badge-label">Specialty</div>
+            <div class="badge-value">Pediatrics</div>
+          </div>
+        </div>
+        <div class="exp-pill">
+          <div class="exp-dot" style="background:#c45c8a;"></div>
+          <div class="exp-text">5.0 Star Rating</div>
+        </div>
+      </div>
+ 
+      <div class="slide-content">
+        <div class="slide-tag" style="background:rgba(196,92,138,0.10);color:#c45c8a;">
+          <i class="fas fa-circle" style="font-size:0.5rem;"></i> Pediatric Care
+        </div>
+        <h1 class="slide-title">
+          Gentle Care for<br>
+          <span class="accent" style="color:#c45c8a;">Little Champions</span>
+        </h1>
+        <p class="slide-desc">Newborns to teenagers — our pediatric specialists create a safe, warm environment so every child receives the attention they deserve.</p>
+        <a href="#appointment" class="slide-cta" style="background:#c45c8a;box-shadow:0 6px 22px rgba(196,92,138,0.35);">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+        <div class="testimonial-block">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Dr. Amara made my 4-year-old feel completely safe and at ease. We finally found a pediatrician we truly trust. We'll never go anywhere else."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#c45c8a;">F</div>
+            <div>
+              <div class="testimonial-name">Fatima Al-Hassan</div>
+              <div class="testimonial-role">Parent, Pediatrics · 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div><!-- /slides-track -->
+ 
+  <!-- DOTS -->
+  <div class="slider-dots">
+    <button class="dot active" onclick="goTo(0)"></button>
+    <button class="dot" onclick="goTo(1)"></button>
+    <button class="dot" onclick="goTo(2)"></button>
+    <button class="dot" onclick="goTo(3)"></button>
+  </div>
+ 
+  <!-- ARROWS -->
+  <div class="slider-arrows">
+    <button class="arrow-btn" onclick="prevSlide()"><i class="fas fa-arrow-left"></i></button>
+    <button class="arrow-btn" onclick="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+  </div>
+ 
+  <!-- COUNTER -->
+  <div class="slide-counter" id="slideCounter">01 / 04</div>
+ 
+  <!-- PROGRESS -->
+  <div class="progress-bar" id="progressBar"></div>
+ 
+</section>
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg-circle hero-bg-circle-1"></div>
+  <div class="hero-bg-circle hero-bg-circle-2"></div>
+  <div class="hero-inner">
+    <div class="hero-content fade-up">
+      <div class="hero-badge"><i class="fas fa-circle"></i> Trusted by 12,000+ patients</div>
+      <h1 class="hero-title">Your Health Is Our<br><span class="highlight">Greatest Priority</span></h1>
+      <p class="hero-desc">Experience compassionate, world-class healthcare at AroraCare. Our team of specialist physicians is dedicated to your wellbeing — from prevention to recovery.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">15<span>+</span></div>
+          <div class="hero-stat-label">Years of Excellence</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">40<span>+</span></div>
+          <div class="hero-stat-label">Specialist Doctors</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">98<span>%</span></div>
+          <div class="hero-stat-label">Patient Satisfaction</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrap fade-up" style="animation-delay:0.2s">
+      <div class="hero-image-card">
+        <div class="hero-doctor-placeholder">
+          <i class="fas fa-user-md"></i>
+          <span style="color:var(--sage);font-weight:600;font-size:0.9rem;">Our Specialists</span>
+        </div>
+      </div>
+      <div class="hero-float-card card-1">
+        <div class="float-icon green"><i class="fas fa-heartbeat"></i></div>
+        <div>
+          <div class="float-card-title">Heart Monitoring</div>
+          <div class="float-card-sub">24/7 Cardiac Care</div>
+        </div>
+      </div>
+      <div class="hero-float-card card-2">
+        <div class="float-icon blue"><i class="fas fa-star"></i></div>
+        <div>
+          <div class="float-card-title">Top Rated Clinic</div>
+          <div class="float-card-sub">4.9 / 5 Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-up">
+        <i class="fas fa-hospital-alt"></i>
+        <div class="about-badge-wrap">
+          <div class="about-badge">
+            <div class="about-badge-num">15+</div>
+            <div class="about-badge-text">Years Active</div>
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-num">40+</div>
+            <div class="about-badge-text">Doctors</div>
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-num">12K+</div>
+            <div class="about-badge-text">Patients</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <div class="section-label">About AroraCare</div>
+        <h2 class="section-title">Healing With Heart & Science</h2>
+        <p class="section-sub">Founded in 2009, AroraCare Clinic has been a cornerstone of community health in our city. We combine cutting-edge medical technology with warm, personalized care to help every patient live their healthiest life.</p>
+        <p style="font-size:0.92rem;color:var(--text-light);margin-top:16px;line-height:1.8;font-weight:300;">Our mission is simple: to deliver exceptional, affordable healthcare with integrity and compassion. We believe every patient deserves respectful attention, transparent communication, and the very best in medical expertise.</p>
+        <div class="values-grid" style="margin-top:28px;">
+          <div class="value-card">
+            <div class="value-card-title"><i class="fas fa-heart" style="color:var(--sage);margin-right:6px;"></i>Compassion</div>
+            <div class="value-card-text">We treat every patient like family, with dignity and care.</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card-title"><i class="fas fa-microscope" style="color:var(--sage);margin-right:6px;"></i>Innovation</div>
+            <div class="value-card-text">Advanced diagnostics and evidence-based treatment plans.</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card-title"><i class="fas fa-shield-alt" style="color:var(--sage);margin-right:6px;"></i>Integrity</div>
+            <div class="value-card-text">Honest, transparent care you can always rely on.</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card-title"><i class="fas fa-users" style="color:var(--sage);margin-right:6px;"></i>Community</div>
+            <div class="value-card-text">Dedicated to improving health outcomes for everyone.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Comprehensive Medical Services</h2>
+      <p class="section-sub">From routine check-ups to advanced specialist care — we cover every aspect of your health under one roof.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#e8f5ef;color:#5a9b7f;"><i class="fas fa-heartbeat"></i></div>
+        <div class="service-title">Cardiology</div>
+        <div class="service-desc">Expert heart care including ECGs, stress tests, and cardiac consultations for all age groups.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#e8f4fd;color:#4a90b8;"><i class="fas fa-brain"></i></div>
+        <div class="service-title">Neurology</div>
+        <div class="service-desc">Diagnosis and treatment for neurological conditions, from headaches to complex neurological disorders.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#fff4e5;color:#e59a3a;"><i class="fas fa-bone"></i></div>
+        <div class="service-title">Orthopedics</div>
+        <div class="service-desc">Joint, spine, and sports injury care with minimally invasive surgical options available.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#fde8f0;color:#c45c8a;"><i class="fas fa-baby"></i></div>
+        <div class="service-title">Pediatrics</div>
+        <div class="service-desc">Compassionate care for children from newborns to teenagers, covering all developmental milestones.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#f0ffe8;color:#6ab04c;"><i class="fas fa-tooth"></i></div>
+        <div class="service-title">Dental Care</div>
+        <div class="service-desc">Full dental services from preventive cleanings to cosmetic and restorative procedures.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#e8f0ff;color:#5b73e8;"><i class="fas fa-eye"></i></div>
+        <div class="service-title">Ophthalmology</div>
+        <div class="service-desc">Vision checks, cataract treatment, and LASIK consultations with the latest optical equipment.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#fff0e8;color:#e57c3a;"><i class="fas fa-lungs"></i></div>
+        <div class="service-title">Pulmonology</div>
+        <div class="service-desc">Respiratory care for asthma, COPD, and other lung conditions using modern diagnostics.</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon" style="background:#ffe8f5;color:#b84a90;"><i class="fas fa-flask"></i></div>
+        <div class="service-title">Laboratory & Diagnostics</div>
+        <div class="service-desc">Comprehensive blood work, imaging, and pathology services with fast turnaround times.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOCTORS ── -->
+<section id="doctors">
+  <div class="container">
+    <div class="doctors-header">
+      <div class="section-label">Meet The Team</div>
+      <h2 class="section-title">Our Expert Physicians</h2>
+      <p class="section-sub" style="margin:0 auto;">Dedicated specialists with decades of experience, committed to providing outstanding patient-centered care.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card fade-up">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#d4ede2,#c5e3f7)">
+          <i class="fas fa-user-md"></i>
+          <div class="doctor-specialty-tag">Cardiology</div>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-name">Dr. Sara</div>
+          <div class="doctor-title">Senior Cardiologist, MD, FACC</div>
+          <div class="doctor-meta">
+            <div class="doctor-meta-item"><i class="fas fa-clock"></i> 14 yrs exp.</div>
+            <div class="doctor-meta-item"><i class="fas fa-star"></i> 4.9 rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#e8f4fd,#d4ede2)">
+          <i class="fas fa-user-md"></i>
+          <div class="doctor-specialty-tag">Neurology</div>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-name">Dr. James </div>
+          <div class="doctor-title">Consultant Neurologist, PhD</div>
+          <div class="doctor-meta">
+            <div class="doctor-meta-item"><i class="fas fa-clock"></i> 11 yrs exp.</div>
+            <div class="doctor-meta-item"><i class="fas fa-star"></i> 4.8 rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#fff4e5,#d4ede2)">
+          <i class="fas fa-user-md"></i>
+          <div class="doctor-specialty-tag">Orthopedics</div>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-name">Dr. Priya</div>
+          <div class="doctor-title">Orthopedic Surgeon, MS, FRCS</div>
+          <div class="doctor-meta">
+            <div class="doctor-meta-item"><i class="fas fa-clock"></i> 9 yrs exp.</div>
+            <div class="doctor-meta-item"><i class="fas fa-star"></i> 4.9 rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#fde8f0,#e8f4fd)">
+          <i class="fas fa-user-md"></i>
+          <div class="doctor-specialty-tag">Pediatrics</div>
+        </div>
+        <div class="doctor-info">
+          <div class="doctor-name">Dr. Amara</div>
+          <div class="doctor-title">Senior Pediatrician, MBBS, DCH</div>
+          <div class="doctor-meta">
+            <div class="doctor-meta-item"><i class="fas fa-clock"></i> 12 yrs exp.</div>
+            <div class="doctor-meta-item"><i class="fas fa-star"></i> 5.0 rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#" class="btn btn-outline">View All Doctors <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section id="why">
+  <div class="why-bg">
+    <div class="why-bg-circle" style="width:400px;height:400px;top:-150px;right:-100px;"></div>
+    <div class="why-bg-circle" style="width:250px;height:250px;bottom:-80px;left:10%;"></div>
+  </div>
+  <div class="container why-inner">
+    <div class="why-header">
+      <div class="section-label">Why AroraCare</div>
+      <h2 class="section-title">Why Thousands Choose Us</h2>
+      <p class="section-sub">We've built our reputation on results, relationships, and relentless dedication to your health.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-award"></i></div>
+        <div class="why-title">15+ Years of Trust</div>
+        <div class="why-desc">Over a decade and a half serving our community with consistently excellent patient outcomes and care standards.</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-microscope"></i></div>
+        <div class="why-title">Advanced Technology</div>
+        <div class="why-desc">State-of-the-art diagnostic equipment, digital records, and minimally invasive treatment solutions.</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-user-check"></i></div>
+        <div class="why-title">Patient-First Approach</div>
+        <div class="why-desc">Every decision centers on what's best for you. We listen, explain clearly, and involve you at every step.</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-clock"></i></div>
+        <div class="why-title">24/7 Emergency Care</div>
+        <div class="why-desc">Round-the-clock availability for emergencies, with rapid response times and dedicated emergency staff.</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-globe"></i></div>
+        <div class="why-title">Multi-Specialty Under One Roof</div>
+        <div class="why-desc">Avoid the hassle of multiple hospitals — access all major specialties in one convenient location.</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-wallet"></i></div>
+        <div class="why-title">Affordable & Transparent</div>
+        <div class="why-desc">Clear pricing, insurance partnerships, and flexible payment plans so quality care stays accessible.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── APPOINTMENT ── -->
+<section id="appointment">
+  <div class="container">
+    <div class="appointment-wrap">
+      <div class="appointment-info fade-up">
+        <div class="section-label">Schedule a Visit</div>
+        <h2 class="section-title">Book Your Appointment Today</h2>
+        <p class="section-sub">Getting care has never been easier. Fill out the form and one of our coordinators will confirm your slot within 2 hours.</p>
+        <ul class="appointment-checklist" style="margin-top:28px;">
+          <li><i class="fas fa-check-circle"></i> Same-day appointments often available</li>
+          <li><i class="fas fa-check-circle"></i> Confirmation via SMS & Email</li>
+          <li><i class="fas fa-check-circle"></i> Easy rescheduling, no penalty</li>
+          <li><i class="fas fa-check-circle"></i> All major insurance plans accepted</li>
+          <li><i class="fas fa-check-circle"></i> Online & in-person consultations</li>
+        </ul>
+      </div>
+      <div class="appointment-form fade-up">
+        <div class="form-title">Request an Appointment</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="e.g. Shaik Nazeer">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 98765 432XX">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <input type="time">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>General Consultation</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Dental Care</option>
+            <option>Ophthalmology</option>
+            <option>Laboratory & Diagnostics</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Additional Notes (optional)</label>
+          <textarea rows="3" placeholder="Any symptoms or concerns you'd like to mention..."></textarea>
+        </div>
+        <button class="btn btn-primary form-submit" onclick="submitForm(this)">
+          <i class="fas fa-calendar-check"></i> Confirm Appointment
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <p class="section-sub" style="margin:0 auto;">Real experiences from the patients who trust AroraCare with their health and wellbeing.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Dr. Mitchell identified my heart condition quickly and accurately. The entire team was calm, professional, and genuinely kind throughout my treatment. I feel so much better now."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Rohan Mehta</div>
+            <div class="testimonial-role">Cardiac Patient, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I brought my 4-year-old daughter to Dr. Amara and the experience was wonderful. She made my little one feel safe and comfortable — we'll never go anywhere else."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">F</div>
+          <div>
+            <div class="testimonial-name">Fatima Al-Hassan</div>
+            <div class="testimonial-role">Parent, Pediatrics, 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The orthopaedic team handled my knee surgery with incredible precision. Recovery was smooth and Dr. Nair's follow-up care was thorough and reassuring throughout."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Arjun Singhania</div>
+            <div class="testimonial-role">Surgery Patient, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★☆</div>
+        <p class="testimonial-text">"Booking was easy, waiting time was minimal, and the diagnostic lab results came back the same evening. AroraCare runs like a well-oiled machine. Highly recommended."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">L</div>
+          <div>
+            <div class="testimonial-name">Lena Kovacs</div>
+            <div class="testimonial-role">General Checkup, 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"After struggling for months, Dr. Okonkwo correctly diagnosed my migraine disorder and gave me a treatment plan that actually works. I owe my quality of life to this clinic."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sneha Pillai</div>
+            <div class="testimonial-role">Neurology Patient, 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"From the reception to the doctor's room — everyone was attentive, warm, and professional. The facility is spotlessly clean and modern. AroraCare truly feels like the future of healthcare."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">T</div>
+          <div>
+            <div class="testimonial-name">Thomas Andersen</div>
+            <div class="testimonial-role">Regular Patient, 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div style="margin-bottom:48px;">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact & Location</h2>
+      <p class="section-sub">We're here to help — reach out by phone, email, or visit us in person at our clinic.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-card-label">Our Address</div>
+              <div class="contact-card-value">Vasavi MPM Grand, Ameerpet, Hyderabad, TS 500016</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="contact-card-label">Phone</div>
+              <div class="contact-card-value">+91 40 6600 123X &nbsp;|&nbsp; +91 90000 5678X</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value">hello@aroracare.in</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-card-label">Working Hours</div>
+              <div class="contact-card-value">Mon–Sat: 8am–9pm &nbsp;|&nbsp; Sun: 9am–5pm</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon" style="background:#fde8ef;color:#c45c8a;"><i class="fas fa-ambulance"></i></div>
+            <div>
+              <div class="contact-card-label">Emergency (24/7)</div>
+              <div class="contact-card-value" style="color:#cf4080;">+91 40 6600 9999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap fade-up">
+        <div class="map-placeholder-icon"><i class="fas fa-map-marked-alt"></i></div>
+        <div class="map-placeholder-text">Interactive Map</div>
+        <div class="map-placeholder-addr">Level-6, Vasavi MPM Grand, Ameerpet, Hyderabad</div>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-primary" style="margin-top:8px;font-size:0.88rem;padding:11px 22px;">
+          <i class="fas fa-directions"></i> Get Directions
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon" style="background:rgba(255,255,255,0.15);">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M11 5h2v4h3l-4 5-4-5h3z"/></svg>
+          </div>
+          <span class="logo-text">Arora<span style="color:var(--sage-light)">Care</span></span>
+        </a>
+        <p class="footer-desc">Providing compassionate, world-class healthcare to our community since 2009. Your health is our greatest calling.</p>
+         <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Diagnostics</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Support</div>
+        <ul class="footer-links">
+          <li><a href="#">Patient Portal</a></li>
+          <li><a href="#">Insurance Info</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AroraCare Clinic. All rights reserved.</span>
+      <span>Made with <span style="color:var(--sage-light)">♥</span> for better health</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+      const TOTAL = 4;
+  const AUTOPLAY_MS = 5000;
+  let current = 0;
+  let timer = null;
+  let startTime = null;
+  let rafId = null;
+ 
+  const track = document.getElementById('slidesTrack');
+  const dots = document.querySelectorAll('.dot');
+  const slides = document.querySelectorAll('.slide');
+  const counter = document.getElementById('slideCounter');
+  const progressBar = document.getElementById('progressBar');
+ 
+  function setSlide(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + TOTAL) % TOTAL;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    track.style.transform = `translateX(-${current * 25}%)`;
+    counter.textContent = String(current + 1).padStart(2, '0') + ' / 0' + TOTAL;
+  }
+ 
+  function nextSlide() { resetAutoplay(); setSlide(current + 1); }
+  function prevSlide() { resetAutoplay(); setSlide(current - 1); }
+  function goTo(idx)   { resetAutoplay(); setSlide(idx); }
+ 
+  // Progress bar animation
+  function animateProgress() {
+    if (!startTime) startTime = performance.now();
+    const elapsed = performance.now() - startTime;
+    const pct = Math.min((elapsed / AUTOPLAY_MS) * 100, 100);
+    progressBar.style.width = pct + '%';
+    progressBar.style.transitionDuration = '0ms';
+    if (elapsed < AUTOPLAY_MS) {
+      rafId = requestAnimationFrame(animateProgress);
+    }
+  }
+ 
+  function startAutoplay() {
+    startTime = null;
+    rafId = requestAnimationFrame(animateProgress);
+    timer = setTimeout(() => {
+      setSlide(current + 1);
+      progressBar.style.width = '0%';
+      startAutoplay();
+    }, AUTOPLAY_MS);
+  }
+ 
+  function resetAutoplay() {
+    clearTimeout(timer);
+    cancelAnimationFrame(rafId);
+    progressBar.style.width = '0%';
+    startAutoplay();
+  }
+ 
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') nextSlide();
+    if (e.key === 'ArrowLeft')  prevSlide();
+  });
+ 
+  // Touch / swipe support
+  let touchStartX = 0;
+  const slider = document.getElementById('heroSlider');
+  slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
+  });
+ 
+  // Pause on hover
+  slider.addEventListener('mouseenter', () => { clearTimeout(timer); cancelAnimationFrame(rafId); });
+  slider.addEventListener('mouseleave', () => { resetAutoplay(); });
+ 
+  startAutoplay();
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Stagger children in grids
+  document.querySelectorAll('.services-grid, .doctors-grid, .why-grid, .testimonials-grid').forEach(grid => {
+    grid.querySelectorAll('.fade-up').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.08}s`;
+    });
+  });
+
+  // Form submit
+  function submitForm(btn) {
+    btn.textContent = '✓ Appointment Requested!';
+    btn.style.background = '#4a8a6e';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fas fa-calendar-check"></i> Confirm Appointment';
+      btn.disabled = false;
+      btn.style.background = '';
+    }, 3500);
+  }
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
